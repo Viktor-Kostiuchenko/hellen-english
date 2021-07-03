@@ -138,6 +138,10 @@ ol {
   } */
 }
 
+.Program__item {
+  border-left: 1px solid #ffffff;
+}
+
 .Program__item:not(:first-child) {
   padding-top: 40px;
 }
