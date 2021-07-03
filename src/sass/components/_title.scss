@@ -1,0 +1,31 @@
+.title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+}
+
+.black-title {
+  color: $primary-black-color;
+}
+
+.white-title {
+  color: $primary-white-color;
+}
+
+.title-accent-word {
+  color: $accent-color;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .title {
+    font-size: 46px;
+  }
+}
