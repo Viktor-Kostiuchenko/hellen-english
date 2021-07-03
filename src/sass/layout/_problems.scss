@@ -3,29 +3,26 @@
 }
 
 .problems-container {
-  position: relative;
-
   padding-top: 27px;
-  min-height: 545px;
 }
 
 .problems-title {
   margin-bottom: 25px;
 }
 
-.list-block {
-  position: absolute;
-  //   top: 208px;
-  //   left: 20px;
-
+.problems-list-block {
   padding-top: 20px;
-  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-bottom: 20px;
   padding-left: 30px;
-  //   width: calc(100% - 40px);
-  //   min-width: 280px;
-  width: 100%;
+  //   width: 100%;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2; //200%
 
   background-color: $primary-white-color;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }
 
 .problems-list {
@@ -33,7 +30,16 @@
   counter-reset: section;
 }
 
+.problems-item:not(:last-child) {
+  padding-bottom: 5px;
+}
+
 .problems-item::before {
   counter-increment: section;
-  content: '-- 0' counter(section);
+  content: '— 0' counter(section);
+
+  font-size: 14px;
+  line-height: (17px / 14px); //121%
+
+  color: $accent-color;
 }

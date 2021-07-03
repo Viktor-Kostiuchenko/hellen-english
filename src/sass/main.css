@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -10,6 +11,16 @@
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+body {
+  background-color: #ffffff;
+  color: #111518;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.56;
+  letter-spacing: 0.08em;
 }
 
 img {
@@ -113,9 +124,7 @@ ol {
 }
 
 .problems-container {
-  position: relative;
   padding-top: 27px;
-  min-height: 545px;
 }
 
 .problems-title {
@@ -123,20 +132,31 @@ ol {
 }
 
 .list-block {
-  position: absolute;
   padding-top: 20px;
-  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-bottom: 20px;
   padding-left: 30px;
-  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2;
   background-color: #ffffff;
+  -webkit-box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+          box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }
 
 .problems-list {
   counter-reset: section;
 }
 
+.problems-item:not(:last-child) {
+  padding-bottom: 5px;
+}
+
 .problems-item::before {
   counter-increment: section;
-  content: "-- 0" counter(section);
+  content: "— 0" counter(section);
+  font-size: 14px;
+  line-height: 1.21429;
+  color: #ff6b09;
 }
 /*# sourceMappingURL=main.css.map */
