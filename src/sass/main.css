@@ -70,7 +70,70 @@ ol {
   }
 }
 
-.header {
-  color: red;
+.button {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  width: 260px;
+  height: 48px;
+  text-align: center;
+  white-space: nowrap;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.2;
+  background-color: #ff6b09;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1366px) {
+  .button {
+    width: 354px;
+    height: 70px;
+    font-size: 14px;
+  }
+}
+
+.botton-heder-desk {
+  border: 2px;
+  border-color: #ff6b09;
+  background-color: #ffffff;
+  color: #ff6b09;
+}
+
+@media screen and (min-width: 1366px) {
+  .botton-heder-desk {
+    width: 336px;
+  }
+}
+
+.contacts-section {
+  background-color: grey;
+}
+
+.contacts-title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.contacts-text {
+  text-align: center;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.contacts-title--color-word {
+  color: #ff6b09;
 }
 /*# sourceMappingURL=main.css.map */
