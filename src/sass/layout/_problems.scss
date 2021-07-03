@@ -1,5 +1,5 @@
 .problems {
-  background-color: $primary-black-color;
+  background-image: linear-gradient(to bottom, $primary-black-color 75%, $primary-white-color 75%);
 }
 
 .problems-container {
@@ -30,5 +30,10 @@
 
 .problems-list {
   //   width: 100%;
-  list-style: decimal-leading-zero;
+  counter-reset: section;
+}
+
+.problems-item::before {
+  counter-increment: section;
+  content: '-- 0' counter(section);
 }

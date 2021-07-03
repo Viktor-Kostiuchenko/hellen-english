@@ -50,6 +50,7 @@ ol {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
+  outline: 2px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -107,7 +108,8 @@ ol {
 }
 
 .problems {
-  background-color: #111518;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(75%, #111518), color-stop(75%, #ffffff));
+  background-image: linear-gradient(to bottom, #111518 75%, #ffffff 75%);
 }
 
 .problems-container {
@@ -130,6 +132,11 @@ ol {
 }
 
 .problems-list {
-  list-style: decimal-leading-zero;
+  counter-reset: section;
+}
+
+.problems-item::before {
+  counter-increment: section;
+  content: "-- 0" counter(section);
 }
 /*# sourceMappingURL=main.css.map */
