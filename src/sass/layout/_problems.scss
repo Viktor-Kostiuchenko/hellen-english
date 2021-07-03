@@ -1,0 +1,34 @@
+.problems {
+  background-color: $primary-black-color;
+}
+
+.problems-container {
+  position: relative;
+
+  padding-top: 27px;
+  min-height: 545px;
+}
+
+.problems-title {
+  margin-bottom: 25px;
+}
+
+.list-block {
+  position: absolute;
+  //   top: 208px;
+  //   left: 20px;
+
+  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  //   width: calc(100% - 40px);
+  //   min-width: 280px;
+  width: 100%;
+
+  background-color: $primary-white-color;
+}
+
+.problems-list {
+  //   width: 100%;
+  list-style: decimal-leading-zero;
+}
