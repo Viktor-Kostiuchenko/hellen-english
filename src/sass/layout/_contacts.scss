@@ -1,15 +1,67 @@
 .contacts-section {
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
 
-    background-image: url("../images/content/mobile/contacts-mob.png");
+    background-image: url("../images/content/mobile/contacts-mob.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100%;
+    height: 507px;
     background-color: #111518;
+}
+
+@media (min-device-pixel-ratio: 2) and (max-width: 480px),
+    (min-resolution: 192dpi) and (max-width: 480px),
+    (min-resolution: 2dppx) and (max-width: 480px) {
+    .contacts-section {
+        background-image: url("../images/content/mobile/contacts-mob@2x.webp");
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .contacts-section {
+        background-image: url("../images/content/tablet/contacts-mob.webp");
+    }
+}
+
+/* 2x и 768+ */
+@media (min-device-pixel-ratio: 2) and (min-width: 481px),
+    (min-resolution: 192dpi) and (min-width: 481px),
+    (min-resolution: 2dppx) and (min-width: 481px) {
+    .contacts-section {
+        background-image: url("../images/content/tablet/contacts-mob@2x.webp");
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contacts-section {
+        background-image: url("../images/content/desktop/contacts-desk.webp");
+    }
+}
+
+/* 2x и 1200+ */
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    .contacts-section {
+        background-image: url("../images/content/desktop/contacts-desk@2x.webp");
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contacts-section {
+        height: 520px;
+    }
+}
+@media screen and (min-width: 1366px) {
+    .contacts-section {
+        max-width: 1679px;
+        height: 810px;
+    }
 }
 .contacts-title {
     display: inline-block;
@@ -23,6 +75,14 @@
     font-size: 14px;
     line-height: 1.3;
     color: $primary-white-color;
+    @media screen and (min-width: 768px) {
+        width: 688px;
+        font-size: 26px;
+    }
+    @media screen and (min-width: 1366px) {
+        width: 1090px;
+        font-size: 46px;
+    }
 }
 
 .contacts-text {
@@ -37,11 +97,23 @@
     font-size: 12px;
     line-height: 1.2;
     color: $primary-white-color;
+    @media screen and (min-width: 768px) {
+        width: 452px;
+        font-size: 14px;
+    }
+    @media screen and (min-width: 1366px) {
+        width: 1090px;
+        font-size: 30px;
+    }
 }
 .contacts-title--color-word {
     color: $accent-color;
 }
 
+.contacts-form {
+    display: flex;
+    flex-direction: column;
+}
 .contacts-form__name--input {
     width: 280px;
     height: 48px;
@@ -55,6 +127,9 @@
     line-height: 1.2;
     background-color: transparent;
     color: $primary-white-color;
+    @media screen and (min-width: 768px) {
+        width: 390px;
+    }
 }
 
 .contacts-form__phone--input {
@@ -70,7 +145,7 @@
     line-height: 1.2;
     background-color: transparent;
     color: $primary-white-color;
-}
-.placeholder {
-    color: $primary-white-color;
+    @media screen and (min-width: 768px) {
+        width: 390px;
+    }
 }
