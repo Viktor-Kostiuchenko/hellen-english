@@ -1,10 +1,23 @@
 .contacts-section {
-    // background-image: url(".//");
-    background-color: grey;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+
+    background-image: url("../images/content/mobile/contacts-mob.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    background-color: #111518;
 }
 .contacts-title {
+    display: inline-block;
+    width: 280px;
     margin-bottom: 30px;
-    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
     font-weight: 800;
     font-style: normal;
     font-size: 14px;
@@ -13,7 +26,12 @@
 }
 
 .contacts-text {
-    text-align: center;
+    display: inline-block;
+    width: 280px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+
     font-weight: 600;
     font-style: normal;
     font-size: 12px;
@@ -22,4 +40,37 @@
 }
 .contacts-title--color-word {
     color: $accent-color;
+}
+
+.contacts-form__name--input {
+    width: 280px;
+    height: 48px;
+    margin-bottom: 20px;
+    padding-left: 28px;
+    border: 1px solid $primary-white-color;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.2;
+    background-color: transparent;
+    color: $primary-white-color;
+}
+
+.contacts-form__phone--input {
+    width: 280px;
+    height: 48px;
+    margin-bottom: 50px;
+    padding-left: 28px;
+    border: 1px solid $primary-white-color;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.2;
+    background-color: transparent;
+    color: $primary-white-color;
+}
+.placeholder {
+    color: $primary-white-color;
 }
