@@ -22,7 +22,6 @@
   &::after {
     content: '';
     display: block;
-
     position: absolute;
     background: url('../images/content/mobile/program-mob@2x.png');
     background-size: contain;
@@ -110,7 +109,6 @@
   text-align: left;
   width: 180px;
   margin-top: 50px;
-  // margin-bottom: 30px;
   display: block;
 }
 //-----------TABLET-768px-------------------------
@@ -187,7 +185,7 @@
       display: block;
       position: absolute;
       border-top: 1px solid $primary-white-color;
-      transform: translateY(157px);
+      transform: translateY(156px);
       width: 100vw;
       z-index: 1;
     }
@@ -199,13 +197,12 @@
       display: block;
       position: absolute;
       background: url('../images/content/desktop/program-desk@2x.png');
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
-      // overflow: hidden;
       opacity: 0.5;
       width: 667px;
       height: 502px;
-      bottom: -358px;
+      bottom: -363px;
       left: -152px;
     }
   }
@@ -214,6 +211,7 @@
     line-height: 1.3;
     letter-spacing: 0.03em;
     text-align: left;
+    height: 57px;
   }
   .program-list {
     flex-direction: row;
@@ -246,6 +244,7 @@
     font-size: 20px;
     line-height: 1.4;
     text-transform: none;
+    height: 28px;
     &::first-letter {
       font-size: 30px;
       line-height: 0.93;
