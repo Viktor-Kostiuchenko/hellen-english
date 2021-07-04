@@ -1,4 +1,4 @@
-.contacts-section {
+.contacts {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -10,20 +10,20 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 507px;
+    height: 100%;
     background-color: #111518;
 }
 
 @media (min-device-pixel-ratio: 2) and (max-width: 480px),
     (min-resolution: 192dpi) and (max-width: 480px),
     (min-resolution: 2dppx) and (max-width: 480px) {
-    .contacts-section {
+    .contacts {
         background-image: url("../images/content/mobile/contacts-mob@2x.webp");
     }
 }
 
 @media screen and (min-width: 481px) {
-    .contacts-section {
+    .contacts {
         background-image: url("../images/content/tablet/contacts-tab.webp");
     }
 }
@@ -32,13 +32,13 @@
 @media (min-device-pixel-ratio: 2) and (min-width: 481px),
     (min-resolution: 192dpi) and (min-width: 481px),
     (min-resolution: 2dppx) and (min-width: 481px) {
-    .contacts-section {
+    .contacts {
         background-image: url("../images/content/tablet/contacts-tab@2x.webp");
     }
 }
 
-@media screen and (min-width: 768px) {
-    .contacts-section {
+@media screen and (min-width: 769px) {
+    .contacts {
         background-image: url("../images/content/desktop/contacts-desk.webp");
     }
 }
@@ -47,52 +47,45 @@
 @media (min-device-pixel-ratio: 2) and (min-width: 769px),
     (min-resolution: 192dpi) and (min-width: 769px),
     (min-resolution: 2dppx) and (min-width: 769px) {
-    .contacts-section {
+    .contacts {
         background-image: url("../images/content/desktop/contacts-desk@2x.webp");
     }
 }
 
-@media screen and (min-width: 768px) {
-    .contacts-section {
-        height: 520px;
-    }
-}
 @media screen and (min-width: 1366px) {
-    .contacts-section {
-        padding-top: 136px;
-        padding-bottom: 20px;
-        max-width: 1679px;
-        height: 810px;
+    .contacts {
+        padding-top: 100px;
+        padding-bottom: 60px;
+        max-width: 1680px;
     }
 }
 .contacts-title {
     display: inline-block;
     width: 280px;
-    height: 73px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
-    // padding-bottom: 20px;
+    margin-bottom: 50px;
+    padding-bottom: 3px;
     font-weight: 800;
     font-style: normal;
     font-size: 14px;
     line-height: 1.3;
     color: $primary-white-color;
     @media screen and (min-width: 768px) {
+        margin-bottom: 61px;
         width: 688px;
-        height: 100px;
         font-size: 26px;
     }
     @media screen and (min-width: 1366px) {
-        width: 1090px;
-        height: 170px;
+        margin-bottom: 50px;
+        width: 1000px;
         font-size: 46px;
     }
 }
 
 .contacts-text {
     display: inline-block;
-    width: 280px;
+    width: 285px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -103,21 +96,17 @@
     line-height: 1.22;
     color: $primary-white-color;
     @media screen and (min-width: 768px) {
-        margin-bottom: 23px;
-
+        margin-bottom: 25px;
         width: 452px;
-        height: 51px;
         font-size: 14px;
     }
     @media screen and (min-width: 1366px) {
-        margin-bottom: 54px;
-
-        width: 1090px;
-        height: 71px;
+        margin-bottom: 58px;
+        width: 950px;
         font-size: 30px;
     }
 }
-.contacts-title--color-word {
+.contacts-color-word {
     color: $accent-color;
 }
 
@@ -125,7 +114,8 @@
     display: flex;
     flex-direction: column;
 }
-.contacts-form__name--input {
+
+.contacts-form-name {
     width: 280px;
     height: 48px;
     margin-bottom: 20px;
@@ -142,14 +132,14 @@
         width: 390px;
     }
     @media screen and (min-width: 1366px) {
-        margin-bottom: 29px;
+        margin-bottom: 30px;
         width: 478px;
-        height: 67px;
+        height: 70px;
         font-size: 20px;
     }
 }
 
-.contacts-form__phone--input {
+.contacts-form-phone {
     width: 280px;
     height: 48px;
     margin-bottom: 50px;
@@ -166,9 +156,23 @@
         width: 390px;
     }
     @media screen and (min-width: 1366px) {
-        margin-bottom: 77px;
+        margin-bottom: 80px;
         width: 478px;
-        height: 67px;
+        height: 70px;
         font-size: 20px;
     }
 }
+// .contacts-form-legend {
+//     position: relative;
+// }
+// .placeholder-color {
+//     z-index: 100;
+//     cursor: text;
+//     position: absolute;
+//     top: 0px;
+//     left: 28px;
+//     color: $primary-white-color;
+// }
+// .contacts-form-legend input:invalid + .placeholder-color {
+//     display: inline;
+// }

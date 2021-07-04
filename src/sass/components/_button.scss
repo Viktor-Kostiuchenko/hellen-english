@@ -2,10 +2,10 @@
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    padding: 15px 10px;
-    border: none;
+    padding: 15px 0;
+
     width: 260px;
-    height: 48px;
+    border: 2px solid $accent-color;
     text-align: center;
     white-space: nowrap;
 
@@ -13,6 +13,7 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 1.2;
+    letter-spacing: 0.08em;
 
     background-color: $accent-color;
     text-transform: uppercase;
@@ -20,14 +21,16 @@
     cursor: pointer;
 
     @media screen and (min-width: 1366px) {
+        padding: 25px 0;
         width: 354px;
-        height: 70px;
         font-size: 14px;
+        letter-spacing: 0.08em;
     }
 }
 
-.botton-heder-desk {
+.botton-heder {
     border: 2px solid $accent-color;
+    font-style: 14px;
     background-color: transparent;
     color: $accent-color;
 
