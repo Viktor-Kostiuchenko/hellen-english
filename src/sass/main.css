@@ -242,6 +242,32 @@ ol {
   .contacts-title {
     width: 688px;
     height: 100px;
+=======
+  }
+}
+
+.title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+}
+
+.black-title {
+  color: #111518;
+}
+
+.white-title {
+  color: #ffffff;
+}
+
+.title-accent-word {
+  color: #ff6b09;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
     font-size: 26px;
   }
 }
@@ -250,9 +276,12 @@ ol {
   .contacts-title {
     width: 1090px;
     height: 170px;
+=======
+  .title {
     font-size: 46px;
   }
 }
+
 
 .contacts-text {
   display: inline-block;
@@ -357,5 +386,54 @@ ol {
     height: 67px;
     font-size: 20px;
   }
+
+.advantages {
+  padding: 43px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .advantage-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantage-item:not(:last-child) {
+    margin-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantage-item:not(:last-child) {
+    margin-right: 21px;
+  }
+}
+
+.advantage-title {
+  position: relative;
+  width: 215px;
+  min-height: 60px;
+  margin: 0 auto;
+  padding-left: 70px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.64;
+  letter-spacing: 0.08em;
+}
+
+.advantage-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #757575;
+
 }
 /*# sourceMappingURL=main.css.map */
