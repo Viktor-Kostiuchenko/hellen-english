@@ -13,6 +13,16 @@
   overflow: hidden;
 }
 
+body {
+  background-color: #ffffff;
+  color: #111518;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.56;
+  letter-spacing: 0.08em;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -193,7 +203,7 @@ ol {
 }
 
 /* 2x и 1200+ */
-@media (min-device-pixel-ratio: 2) and (min-width: 768px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+@media (min-device-pixel-ratio: 2) and (min-width: 769px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 769px), (min-resolution: 192dpi) and (min-width: 769px), (min-resolution: 2dppx) and (min-width: 769px) {
   .contacts-section {
     background-image: url("../images/content/desktop/contacts-desk@2x.webp");
   }
@@ -207,6 +217,8 @@ ol {
 
 @media screen and (min-width: 1366px) {
   .contacts-section {
+    padding-top: 136px;
+    padding-bottom: 20px;
     max-width: 1679px;
     height: 810px;
   }
@@ -215,10 +227,10 @@ ol {
 .contacts-title {
   display: inline-block;
   width: 280px;
+  height: 73px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 20px;
   font-weight: 800;
   font-style: normal;
   font-size: 14px;
@@ -229,6 +241,7 @@ ol {
 @media screen and (min-width: 768px) {
   .contacts-title {
     width: 688px;
+    height: 100px;
     font-size: 26px;
   }
 }
@@ -236,6 +249,7 @@ ol {
 @media screen and (min-width: 1366px) {
   .contacts-title {
     width: 1090px;
+    height: 170px;
     font-size: 46px;
   }
 }
@@ -244,25 +258,29 @@ ol {
   display: inline-block;
   width: 280px;
   margin-bottom: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 600;
   font-style: normal;
   font-size: 12px;
-  line-height: 1.2;
+  line-height: 1.22;
   color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
   .contacts-text {
+    margin-bottom: 23px;
     width: 452px;
+    height: 51px;
     font-size: 14px;
   }
 }
 
 @media screen and (min-width: 1366px) {
   .contacts-text {
+    margin-bottom: 54px;
     width: 1090px;
+    height: 71px;
     font-size: 30px;
   }
 }
@@ -302,6 +320,15 @@ ol {
   }
 }
 
+@media screen and (min-width: 1366px) {
+  .contacts-form__name--input {
+    margin-bottom: 29px;
+    width: 478px;
+    height: 67px;
+    font-size: 20px;
+  }
+}
+
 .contacts-form__phone--input {
   width: 280px;
   height: 48px;
@@ -320,6 +347,15 @@ ol {
 @media screen and (min-width: 768px) {
   .contacts-form__phone--input {
     width: 390px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .contacts-form__phone--input {
+    margin-bottom: 77px;
+    width: 478px;
+    height: 67px;
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */
