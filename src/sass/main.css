@@ -14,13 +14,13 @@
 }
 
 body {
-  background-color: #ffffff;
-  color: #111518;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 1.56;
+  font-size: 12px;
+  line-height: 1.66667;
   letter-spacing: 0.08em;
+  color: #b9b9b9;
+  background-color: #ffffff;
 }
 
 img {
