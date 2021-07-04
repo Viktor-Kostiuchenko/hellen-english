@@ -47,8 +47,8 @@ ol {
 }
 
 .container {
-  padding-left: 26px;
-  padding-right: 26px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
 }
 
@@ -61,16 +61,100 @@ ol {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
 @media screen and (min-width: 1366px) {
   .container {
     width: 1366px;
+    padding-left: 26px;
+    padding-right: 26px;
   }
 }
 
-.header {
-  color: red;
+.title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+}
+
+.black-title {
+  color: #111518;
+}
+
+.white-title {
+  color: #ffffff;
+}
+
+.title-accent-word {
+  color: #ff6b09;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 26px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .title {
+    font-size: 46px;
+  }
+}
+
+.review {
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.review-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.commentators-photo {
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vk-icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.comments-item {
+  text-align: center;
+}
+
+.commentators-name {
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #ff6b09;
+}
+
+.comment {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #b9b9b9;
+}
+
+.text-box {
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.comments-link {
+  color: #ff6b09;
 }
 /*# sourceMappingURL=main.css.map */

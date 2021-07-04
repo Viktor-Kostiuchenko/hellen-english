@@ -1,0 +1,51 @@
+.review {
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.review-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.commentators-photo {
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vk-icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.comments-item {
+  text-align: center;
+}
+
+.commentators-name {
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.21;
+  color: $accent-color;
+}
+
+.comment {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  color: $primary-text-color;
+}
+
+.text-box {
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.comments-link {
+  color: $accent-color;
+}
