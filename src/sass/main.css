@@ -61,7 +61,6 @@ ol {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
-  outline: 2px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -119,22 +118,22 @@ ol {
 }
 
 .problems {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(75%, #111518), color-stop(75%, #ffffff));
-  background-image: linear-gradient(to bottom, #111518 75%, #ffffff 75%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #111518), color-stop(80%, #ffffff));
+  background-image: linear-gradient(to bottom, #111518 80%, #ffffff 80%);
 }
 
 .problems-container {
-  padding-top: 27px;
+  padding-top: 26px;
 }
 
 .problems-title {
   margin-bottom: 25px;
 }
 
-.list-block {
+.problems-list-block {
   padding-top: 20px;
   padding-right: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   padding-left: 30px;
   font-weight: 700;
   font-size: 14px;
@@ -155,8 +154,79 @@ ol {
 .problems-item::before {
   counter-increment: section;
   content: "— 0" counter(section);
+  display: block;
+  margin-bottom: 5px;
   font-size: 14px;
   line-height: 1.21429;
   color: #ff6b09;
+}
+
+@media screen and (min-width: 768px) {
+  .problems {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #111518), color-stop(70%, #ffffff));
+    background-image: linear-gradient(to bottom, #111518 70%, #ffffff 70%);
+  }
+  .problems-container {
+    padding-top: 60px;
+  }
+  .problems-list-block {
+    padding-top: 30px;
+    padding-right: 96px;
+    padding-left: 96px;
+  }
+  .problems-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: -20px;
+    margin-left: -22px;
+  }
+  .problems-item {
+    margin-top: 20px;
+    margin-left: 22px;
+    -ms-flex-preferred-size: calc((100% - 44px) / 2);
+        flex-basis: calc((100% - 44px) / 2);
+  }
+  .problems-item:not(:last-child) {
+    padding-bottom: unset;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .problems {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #111518), color-stop(80%, #ffffff));
+    background-image: linear-gradient(to bottom, #111518 80%, #ffffff 80%);
+  }
+  .problems-container {
+    padding-top: 100px;
+  }
+  .problems-title {
+    margin-bottom: 70px;
+  }
+  .problems-list-block {
+    padding-top: 70px;
+    padding-right: 114px;
+    padding-left: 114px;
+    padding-bottom: 62px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  .problems-list {
+    margin-top: -32px;
+    margin-left: -40px;
+  }
+  .problems-item {
+    margin-top: 32px;
+    margin-left: 40px;
+    -ms-flex-preferred-size: calc((100% - 120px) / 3);
+        flex-basis: calc((100% - 120px) / 3);
+  }
+  .problems-item::before {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.65;
+  }
 }
 /*# sourceMappingURL=main.css.map */

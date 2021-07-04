@@ -1,21 +1,21 @@
 .problems {
-  background-image: linear-gradient(to bottom, $primary-black-color 75%, $primary-white-color 75%);
+  background-image: linear-gradient(to bottom, $primary-black-color 80%, $primary-white-color 80%);
 }
 
 .problems-container {
-  padding-top: 27px;
+  padding-top: 26px;
 }
 
 .problems-title {
   margin-bottom: 25px;
+  // font-size: 24px; at the maquette
 }
 
 .problems-list-block {
   padding-top: 20px;
   padding-right: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   padding-left: 30px;
-  //   width: 100%;
 
   font-weight: 700;
   font-size: 14px;
@@ -26,7 +26,6 @@
 }
 
 .problems-list {
-  //   width: 100%;
   counter-reset: section;
 }
 
@@ -38,8 +37,95 @@
   counter-increment: section;
   content: '— 0' counter(section);
 
+  display: block;
+  margin-bottom: 5px;
+
   font-size: 14px;
   line-height: (17px / 14px); //121%
 
   color: $accent-color;
+}
+
+@media screen and (min-width: 768px) {
+  .problems {
+    background-image: linear-gradient(
+      to bottom,
+      $primary-black-color 70%,
+      $primary-white-color 70%
+    );
+  }
+
+  .problems-container {
+    padding-top: 60px;
+  }
+
+  .problems-list-block {
+    padding-top: 30px;
+    padding-right: 96px;
+    padding-left: 96px;
+  }
+
+  .problems-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: -20px;
+    margin-left: -22px;
+  }
+
+  .problems-item {
+    margin-top: 20px;
+    margin-left: 22px;
+    flex-basis: calc((100% - 44px) / 2); // items margin 22px
+  }
+
+  .problems-item:not(:last-child) {
+    padding-bottom: unset;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .problems {
+    background-image: linear-gradient(
+      to bottom,
+      $primary-black-color 80%,
+      $primary-white-color 80%
+    );
+  }
+
+  .problems-container {
+    padding-top: 100px;
+  }
+
+  .problems-title {
+    margin-bottom: 70px;
+  }
+
+  .problems-list-block {
+    padding-top: 70px;
+    padding-right: 114px;
+    padding-left: 114px;
+    padding-bottom: 62px;
+
+    font-size: 20px;
+    line-height: (28px / 20px);
+  }
+
+  .problems-list {
+    margin-top: -32px;
+    margin-left: -40px;
+  }
+
+  .problems-item {
+    margin-top: 32px;
+    margin-left: 40px;
+    flex-basis: calc((100% - 120px) / 3); // items margin 40px
+  }
+
+  .problems-item::before {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+    line-height: (33px / 20px); //165%
+  }
 }
