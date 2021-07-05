@@ -9,15 +9,21 @@
   text-align: center;
 }
 
+.how-we-do-list {
+  text-align: center;
+}
+
 .how-we-do-item {
-  padding: 0 18px;
-  padding-bottom: 6px;
+  padding: 0 11px;
+  // padding-bottom: 6px;
 
   width: 100%;
-  min-height: 280px;
+  height: 280px;
 
   background-color: $primary-white-color;
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+
+  transition: color 250ms, background-color 250ms;
 }
 
 .how-we-do-item:not(:last-child) {
@@ -30,10 +36,124 @@
   align-items: center;
 
   height: 98px;
-  //   margin-bottom: 20px;
 }
 
 .how-we-do-icon {
-  width: 46px;
-  height: 48px;
+  color: $accent-color;
+  fill: currentColor;
+
+  transition: color 250ms;
+}
+
+.how-we-do-item-title {
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: (20px / 14px); // 143%
+
+  transition: color 250ms;
+}
+
+.title-span {
+  display: block;
+}
+
+.how-we-do-item-title::after {
+  content: '—';
+  display: block;
+  margin-top: 5px;
+
+  font-size: 20px;
+  line-height: (33px / 20px); // 165%
+  color: $accent-color;
+
+  transition: color 250ms;
+}
+
+.how-we-do-item:hover {
+  color: $primary-white-color;
+  background-color: $accent-color;
+}
+
+.how-we-do-item:hover .how-we-do-item-title::after,
+.how-we-do-item:hover .how-we-do-item-title,
+.how-we-do-item:hover .how-we-do-icon {
+  color: $primary-white-color;
+}
+
+@media screen and (min-width: 768px) {
+  .how-we-do-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -27px;
+    margin-left: -20px;
+  }
+
+  .how-we-do-item {
+    margin-top: 27px;
+    margin-left: 20px;
+    padding: 0 20px;
+    // padding-bottom: 6px;
+
+    flex-basis: calc((100% - 40px) / 2);
+    height: 334px;
+  }
+
+  .how-we-do-item:not(:last-child) {
+    margin-bottom: unset;
+  }
+
+  .how-we-do-icon-wrapper {
+    height: 118px;
+  }
+
+  .how-we-do-item-title {
+    margin-bottom: 10px;
+  }
+
+  .how-we-do-item-title::after {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .how-we-do-container {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+
+  .how-we-do-title {
+    margin-bottom: 50px;
+
+    text-align: unset;
+  }
+
+  .how-we-do-list {
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+
+  .how-we-do-item {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 0 30px;
+    padding-bottom: 55px;
+
+    flex-basis: calc((100% - 60px) / 3);
+    height: 396px;
+  }
+
+  .how-we-do-item-title {
+    margin-bottom: unset;
+    font-size: 20px;
+    line-height: (28px / 20px); // 140%
+  }
+
+  .how-we-do-item-title::after {
+    margin-top: unset;
+  }
+
+  .how-we-do-desc {
+    font-size: 18px;
+    line-height: (28px / 18px); // 156%
+  }
 }
