@@ -6,8 +6,11 @@
   font-weight: 600;
   letter-spacing: 0.06em;
   &::after {
-    content: '_____';
-    color: $accent-color;
+    content: '';
+    display: block;
+    background-color: $accent-color;
+    height: 2px;
+    width: 18px;
   }
 }
 .text-descr {
