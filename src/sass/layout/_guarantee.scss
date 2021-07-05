@@ -1,0 +1,74 @@
+.guar-list {
+  max-width: 1600px;
+  background-color: #f1f1f1;
+  padding: 50px 20px 50px 20px;
+}
+
+.guar-titel {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  text-align: center;
+  color: $primary-black-color;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+.guar-item {
+  position: relative;
+  box-sizing: content-box;
+  padding-left: 20px;
+
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: $primary-black-color;
+  text-align: left;
+
+  &:not(:last-child) {
+    padding-bottom: 23px;
+    border-left: 1px dashed #b9b9b9;
+  }
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: '';
+    background-image: url(../images/icons/fire.svg);
+
+    width: 15px;
+    height: 20px;
+    top: 0px;
+    left: -8px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.guar-list {
+  list-style: none;
+  background-color: #f1f1f1;
+  margin-bottom: 30px;
+}
+
+.guar-text-color {
+  color: $accent-color;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    margin: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .guar {
+    padding: 50px 20px 50px 20px;
+  }
+}
