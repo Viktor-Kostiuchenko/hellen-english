@@ -1,0 +1,40 @@
+.button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 5px;
+
+    width: 260px;
+    border: 2px solid $accent-color;
+    text-align: center;
+    white-space: nowrap;
+
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+
+    background-color: $accent-color;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+
+    @media screen and (min-width: 1366px) {
+        padding: 25px 0;
+        width: 354px;
+        font-size: 14px;
+        letter-spacing: 0.08em;
+    }
+}
+
+.botton-heder {
+    border: 2px solid $accent-color;
+    font-style: 14px;
+    background-color: transparent;
+    color: $accent-color;
+
+    @media screen and (min-width: 1366px) {
+        width: 336px;
+    }
+}
