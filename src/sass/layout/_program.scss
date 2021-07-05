@@ -2,7 +2,7 @@
 .program {
   background-color: $primary-black-color;
   padding-top: 50px;
-  padding-bottom: 437px;
+  padding-bottom: 537px;
 }
 .program-title {
   font-weight: 800;
@@ -11,19 +11,19 @@
   letter-spacing: 0.03em;
   text-align: center;
   color: $primary-white-color;
+  margin-bottom: 43px;
 }
 .program-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: 63px;
-  margin-top: 43px;
   position: relative;
   &::after {
     content: '';
     display: block;
     position: absolute;
-    background: url('../images/content/mobile/program-mob@2x.png');
+    background: url('../images/content/mobile/program-mob.png');
     background-size: contain;
     opacity: 0.5;
     width: 120px;
@@ -32,10 +32,18 @@
     right: -20px;
   }
 }
+@media (min-device-pixel-ratio: 2) and (max-width: 768px),
+  (min-resolution: 192dpi) and (max-width: 768px),
+  (min-resolution: 2dppx) and (max-width: 768px) {
+  .program-list {
+    &::after {
+      background-image: url('../images/content/mobile/program-mob@2x.png');
+    }
+  }
+}
 .program-item {
   position: relative;
   padding-left: 20px;
-
   box-sizing: content-box;
   &:not(:last-child) {
     padding-bottom: 40px;
@@ -54,7 +62,7 @@
     }
   }
 }
-.program-h3 {
+.program-item-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 2;
@@ -76,17 +84,17 @@
     z-index: 2;
   }
 }
-.program-education-list {
+.program-study-block {
   width: 176px;
 }
-.program-key-points {
+.program-study-block-item {
   font-size: 12px;
   line-height: 1.649;
   &:not(:first-child) {
     margin-top: 8px;
   }
 }
-.program-h4 {
+.program-study-block-title {
   font-weight: bold;
   line-height: 1.649;
   color: $accent-color;
@@ -96,7 +104,10 @@
   align-items: center;
   letter-spacing: inherit;
 }
-.program-points-description {
+.program-photo {
+  margin-top: 10px;
+}
+.program-topic-item {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.67;
@@ -104,74 +115,71 @@
   opacity: 0.5;
   letter-spacing: 0.08em;
 }
-.sub-title {
-  line-height: 1.36;
-  text-align: left;
-  width: 180px;
-  margin-top: 50px;
-  display: block;
-}
 //-----------TABLET-768px-------------------------
 @media screen and (min-width: 768px) and (max-width: 1365px) {
   .program {
     padding-top: 60px;
-    padding-bottom: 172px;
+    padding-bottom: 392px;
   }
   .program-title {
     font-size: 26px;
     text-align: left;
+    margin-bottom: 52px;
   }
   .program-list {
     align-items: stretch;
-    margin-top: 52px;
     &::after {
       content: '';
       display: block;
       position: absolute;
-      background: url('../images/content/tablet/program-tab@2x.png');
+      background-image: url('../images/content/tablet/program-tab.png');
+      background-repeat: no-repeat;
       background-size: contain;
-      // overflow: hidden;
       width: 384px;
       height: 280px;
-      bottom: -139px;
+      transform: translateY(50%);
+      bottom: 0;
       right: -40px;
+    }
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    .program-list {
+      &::after {
+        background-image: url('../images/content/tablet/program-tab@2x.png');
+      }
     }
   }
   .program-item {
     padding-left: 56px;
   }
-  .program-h3 {
+  .program-item-title {
     &::before {
       left: -56px;
     }
   }
-  .program-education-list {
+  .program-study-block {
     display: flex;
   }
-  .program-education-list :nth-child(1) {
+  .program-study-block :nth-child(1) {
     flex: none;
     width: 176px;
   }
-  .program-education-list :nth-child(2) {
+  .program-study-block :nth-child(2) {
     width: 155px;
   }
-  .program-education-list :nth-child(3) {
+  .program-study-block :nth-child(3) {
     width: 110px;
   }
-  .program-education-list-mod {
+  .program-study-block-mod {
     flex-direction: column;
   }
-  .program-key-points {
+  .program-study-block-item {
     &:not(:first-child) {
       margin-top: 0px;
       margin-left: 50px;
     }
-  }
-  .sub-title {
-    line-height: 1.36;
-    text-align: center;
-    width: 100%;
-    margin-top: 189px;
   }
 }
 //---------------1366px-desktop--------------
@@ -196,14 +204,23 @@
       content: '';
       display: block;
       position: absolute;
-      background: url('../images/content/desktop/program-desk@2x.png');
+      background: url('../images/content/desktop/program-desk.png');
       background-size: cover;
       background-repeat: no-repeat;
       opacity: 0.5;
       width: 667px;
       height: 502px;
-      bottom: -363px;
+      bottom: -304px;
       left: -152px;
+    }
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 1366px),
+    (min-resolution: 192dpi) and (min-width: 1366px),
+    (min-resolution: 2dppx) and (min-width: 1366px) {
+    .program-container {
+      &::after {
+        background-image: url('../images/content/desktop/program-desk@2x.png');
+      }
     }
   }
   .program-title {
@@ -212,11 +229,11 @@
     letter-spacing: 0.03em;
     text-align: left;
     height: 57px;
+    margin-bottom: 100px;
   }
   .program-list {
     flex-direction: row;
     margin-left: 0px;
-    margin-top: 100px;
     justify-content: space-between;
     align-items: start;
 
@@ -240,7 +257,7 @@
       }
     }
   }
-  .program-h3 {
+  .program-item-title {
     font-size: 20px;
     line-height: 1.4;
     text-transform: none;
@@ -264,38 +281,26 @@
       z-index: 2;
     }
   }
-  .program-education-list {
+  .program-study-block {
     width: 240px;
     display: block;
   }
-  .program-h4 {
+  .program-study-block-title {
     font-size: 20px;
     display: block;
     margin-bottom: 10px;
   }
-  .program-key-points {
+  .program-study-block-item {
     margin-top: 25px;
     &:not(:first-child) {
       margin-top: 25px;
       margin-left: 0px;
     }
   }
-  .program-points-description {
+  .program-topic-item {
     font-size: 18px;
     line-height: 1.56;
     color: $primary-text-color;
     letter-spacing: 0.08em;
-  }
-  .sub-title {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
   }
 }
