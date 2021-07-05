@@ -1,7 +1,11 @@
+.guar {
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
 .guar-list {
-  max-width: 1600px;
-  background-color: #f1f1f1;
   padding: 50px 20px 50px 20px;
+  background-color: #f1f1f1;
 }
 
 .guar-titel {
@@ -15,10 +19,11 @@
   margin-bottom: 30px;
   margin-top: 50px;
 }
+
 .guar-item {
   position: relative;
   box-sizing: content-box;
-  padding-left: 20px;
+  padding-left: 28px;
 
   font-size: 12px;
   line-height: 1.67;
@@ -61,14 +66,6 @@
   color: $accent-color;
 }
 @media screen and (min-width: 320px) {
-  .container {
-    margin: 0;
-    padding-right: 0;
-  }
 }
-
 @media screen and (min-width: 480px) {
-  .guar {
-    padding: 50px 20px 50px 20px;
-  }
 }
