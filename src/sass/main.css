@@ -12,6 +12,16 @@
   overflow: hidden;
 }
 
+body {
+  background-color: #ffffff;
+  color: #111518;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.56;
+  letter-spacing: 0.08em;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -117,6 +127,10 @@ ol {
   margin-bottom: 20px;
 }
 
+.comments-list {
+  margin-bottom: 20px;
+}
+
 .commentators-photo {
   margin-bottom: 20px;
   margin-left: auto;
@@ -142,9 +156,9 @@ ol {
 }
 
 .comment {
-  font-weight: 500;
   font-size: 12px;
   line-height: 1.25;
+  margin-bottom: 25px;
   color: #b9b9b9;
 }
 

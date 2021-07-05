@@ -9,6 +9,10 @@
   margin-bottom: 20px;
 }
 
+.comments-list {
+  margin-bottom: 62px;
+}
+
 .commentators-photo {
   margin-bottom: 20px;
   margin-left: auto;
@@ -33,19 +37,35 @@
   color: $accent-color;
 }
 
-.comment {
-  font-weight: 500;
+.comment-title {
   font-size: 12px;
   line-height: 1.25;
+  margin-bottom: 25px;
   color: $primary-text-color;
 }
 
+.comment-text {
+  font-size: 12px;
+  line-height: 1.66;
+  letter-spacing: 0.01em;
+  color: $secondary-text-color;
+}
+
 .text-box {
-  padding-bottom: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .comments-link {
   color: $accent-color;
+}
+
+@media screen and (min-width: 768px) {
+  .review-title {
+    font-size: 26px;
+  }
+
+  .comments-item {
+    display: flex;
+  }
 }
