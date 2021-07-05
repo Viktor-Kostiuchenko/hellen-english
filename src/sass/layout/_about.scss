@@ -14,7 +14,6 @@
   }
 }
 .text-descr {
-  width: 279px;
   color: $primary-text-color;
   font-size: 12px;
   line-height: 1.67;
@@ -54,14 +53,13 @@
 
 .about-picture {
   margin-bottom: 20px;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .about-item {
   padding-bottom: 25px;
   text-align: left;
   display: block;
-  width: 253px;
 }
 
 .about-check {
@@ -81,14 +79,13 @@
     margin-bottom: 30px;
   }
   .about-list {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.25;
-    margin-top: 60px;
+    margin-top: 20px;
     margin-bottom: 35px;
   }
 
   .about-item {
-    width: 402px;
     padding-bottom: 30px;
   }
   .about-tab {
@@ -109,13 +106,13 @@
     }
   }
   .text-descr {
-    width: 402px;
     font-size: 10px;
     line-height: 2;
   }
 }
 @media screen and (min-width: 1366px) {
   .about-title {
+    font-size: 46px;
     margin-bottom: 50px;
   }
   .about-name {
@@ -124,15 +121,22 @@
     padding-bottom: 15px;
   }
   .about-item {
-    width: 642px;
-    font-size: 16px;
-    line-height: 1.25;
+    font-size: 18px;
+    line-height: 1.55;
   }
   .text-descr {
-    width: 642px;
+    font-size: 18px;
+    line-height: 1.55;
+    padding-bottom: 35px;
+  }
+  .about-link {
+    font-size: 18px;
+    line-height: 1.55;
+    font-style: normal;
+    margin-top: 30px;
   }
 
   .about-tab {
-    justify-content: space-between;
+    justify-content: center;
   }
 }
