@@ -1,0 +1,37 @@
+.button {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 10px;
+    border: none;
+    width: 260px;
+    height: 48px;
+    text-align: center;
+    white-space: nowrap;
+
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.2;
+
+    background-color: $accent-color;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+
+    @media screen and (min-width: 1366px) {
+        width: 354px;
+        height: 70px;
+        font-size: 14px;
+    }
+}
+
+.botton-heder-desk {
+    border: 2px solid $accent-color;
+    background-color: transparent;
+    color: $accent-color;
+
+    @media screen and (min-width: 1366px) {
+        width: 336px;
+    }
+}
