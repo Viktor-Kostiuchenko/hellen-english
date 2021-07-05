@@ -1,0 +1,174 @@
+.contacts-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+
+    background-image: url("../images/content/mobile/contacts-mob.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 507px;
+    background-color: #111518;
+}
+
+@media (min-device-pixel-ratio: 2) and (max-width: 480px),
+    (min-resolution: 192dpi) and (max-width: 480px),
+    (min-resolution: 2dppx) and (max-width: 480px) {
+    .contacts-section {
+        background-image: url("../images/content/mobile/contacts-mob@2x.webp");
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .contacts-section {
+        background-image: url("../images/content/tablet/contacts-tab.webp");
+    }
+}
+
+/* 2x и 768+ */
+@media (min-device-pixel-ratio: 2) and (min-width: 481px),
+    (min-resolution: 192dpi) and (min-width: 481px),
+    (min-resolution: 2dppx) and (min-width: 481px) {
+    .contacts-section {
+        background-image: url("../images/content/tablet/contacts-tab@2x.webp");
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contacts-section {
+        background-image: url("../images/content/desktop/contacts-desk.webp");
+    }
+}
+
+/* 2x и 1200+ */
+@media (min-device-pixel-ratio: 2) and (min-width: 769px),
+    (min-resolution: 192dpi) and (min-width: 769px),
+    (min-resolution: 2dppx) and (min-width: 769px) {
+    .contacts-section {
+        background-image: url("../images/content/desktop/contacts-desk@2x.webp");
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contacts-section {
+        height: 520px;
+    }
+}
+@media screen and (min-width: 1366px) {
+    .contacts-section {
+        padding-top: 136px;
+        padding-bottom: 20px;
+        max-width: 1679px;
+        height: 810px;
+    }
+}
+.contacts-title {
+    display: inline-block;
+    width: 280px;
+    height: 73px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    // padding-bottom: 20px;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.3;
+    color: $primary-white-color;
+    @media screen and (min-width: 768px) {
+        width: 688px;
+        height: 100px;
+        font-size: 26px;
+    }
+    @media screen and (min-width: 1366px) {
+        width: 1090px;
+        height: 170px;
+        font-size: 46px;
+    }
+}
+
+.contacts-text {
+    display: inline-block;
+    width: 280px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 600;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.22;
+    color: $primary-white-color;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 23px;
+
+        width: 452px;
+        height: 51px;
+        font-size: 14px;
+    }
+    @media screen and (min-width: 1366px) {
+        margin-bottom: 54px;
+
+        width: 1090px;
+        height: 71px;
+        font-size: 30px;
+    }
+}
+.contacts-title--color-word {
+    color: $accent-color;
+}
+
+.contacts-form {
+    display: flex;
+    flex-direction: column;
+}
+.contacts-form__name--input {
+    width: 280px;
+    height: 48px;
+    margin-bottom: 20px;
+    padding-left: 28px;
+    border: 1px solid $primary-white-color;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.2;
+    background-color: transparent;
+    color: $primary-white-color;
+    @media screen and (min-width: 768px) {
+        width: 390px;
+    }
+    @media screen and (min-width: 1366px) {
+        margin-bottom: 29px;
+        width: 478px;
+        height: 67px;
+        font-size: 20px;
+    }
+}
+
+.contacts-form__phone--input {
+    width: 280px;
+    height: 48px;
+    margin-bottom: 50px;
+    padding-left: 28px;
+    border: 1px solid $primary-white-color;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.2;
+    background-color: transparent;
+    color: $primary-white-color;
+    @media screen and (min-width: 768px) {
+        width: 390px;
+    }
+    @media screen and (min-width: 1366px) {
+        margin-bottom: 77px;
+        width: 478px;
+        height: 67px;
+        font-size: 20px;
+    }
+}
