@@ -3,24 +3,22 @@
 }
 
 .problems-container {
-  padding-top: 26px;
+  padding-top: 25px;
 }
 
 .problems-title {
   margin-bottom: 25px;
-  // font-size: 24px; at the maquette
+  font-size: 24px;
 }
 
 .problems-list-block {
-  padding-top: 20px;
-  padding-right: 10px;
-  padding-bottom: 20px;
-  padding-left: 30px;
+  padding: 20px 14px 20px 30px;
 
   font-weight: 700;
   font-size: 14px;
-  line-height: 2; //200%
+  line-height: (20px / 14px); //143%
 
+  color: $primary-black-color;
   background-color: $primary-white-color;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }
@@ -30,7 +28,7 @@
 }
 
 .problems-item:not(:last-child) {
-  padding-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .problems-item::before {
@@ -60,27 +58,25 @@
   }
 
   .problems-list-block {
-    padding-top: 30px;
-    padding-right: 96px;
-    padding-left: 96px;
+    padding: 30px 96px 26px 96px;
   }
 
   .problems-list {
     display: flex;
     flex-wrap: wrap;
 
-    margin-top: -20px;
+    margin-top: -8px;
     margin-left: -22px;
   }
 
   .problems-item {
-    margin-top: 20px;
+    margin-top: 8px;
     margin-left: 22px;
     flex-basis: calc((100% - 44px) / 2); // items margin 22px
   }
 
   .problems-item:not(:last-child) {
-    padding-bottom: unset;
+    margin-bottom: unset;
   }
 }
 
@@ -99,16 +95,14 @@
 
   .problems-title {
     margin-bottom: 70px;
+    font-size: 46px;
   }
 
   .problems-list-block {
-    padding-top: 70px;
-    padding-right: 114px;
-    padding-left: 114px;
-    padding-bottom: 62px;
+    padding: 70px 114px 62px 114px;
 
     font-size: 20px;
-    line-height: (28px / 20px);
+    line-height: (28px / 20px); // 140%
   }
 
   .problems-list {
