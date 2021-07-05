@@ -36,10 +36,16 @@
   font-style: normal;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid $primary-text-color;
-  margin-bottom: 20px;
-}
 
+  &::after {
+    content: '';
+    display: block;
+    background-color: $primary-text-color;
+    height: 1px;
+    width: 280px;
+    margin-top: 20px;
+  }
+}
 .about-link {
   color: $accent-color;
   font-size: 12px;
