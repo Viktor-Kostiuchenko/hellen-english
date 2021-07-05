@@ -59,15 +59,21 @@
 .about-item {
   padding-bottom: 25px;
   text-align: left;
-  display: block;
-}
+  display: flex;
 
+  &::before {
+    content: '';
+    display: block;
+    background-image: url('../images/icons/sprite.svg#icon-checked');
+  }
+}
 .about-check {
   margin-right: 10px;
 }
 
 .about-tumb {
   display: flex;
+  // align-items: baseline;
 }
 
 @media screen and (min-width: 480px) {
