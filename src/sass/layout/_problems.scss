@@ -1,0 +1,129 @@
+.problems {
+  background-image: linear-gradient(to bottom, $primary-black-color 75%, $primary-white-color 75%);
+}
+
+.problems-container {
+  padding-top: 25px;
+}
+
+.problems-title {
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.problems-list-block {
+  padding: 20px 14px 20px 30px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: (20px / 14px); //143%
+
+  color: $primary-black-color;
+  background-color: $primary-white-color;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+
+.problems-list {
+  counter-reset: section;
+}
+
+.problems-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.problems-item::before {
+  counter-increment: section;
+  content: '— 0' counter(section);
+
+  display: block;
+  margin-bottom: 5px;
+
+  font-size: 14px;
+  line-height: (17px / 14px); //121%
+
+  color: $accent-color;
+}
+
+@media screen and (min-width: 768px) {
+  .problems {
+    background-image: linear-gradient(
+      to bottom,
+      $primary-black-color 70%,
+      $primary-white-color 70%
+    );
+  }
+
+  .problems-container {
+    padding-top: 60px;
+  }
+
+  .problems-list-block {
+    padding: 30px 96px 26px 96px;
+  }
+
+  .problems-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: -8px;
+    margin-left: -22px;
+  }
+
+  .problems-item {
+    margin-top: 8px;
+    margin-left: 22px;
+    flex-basis: calc((100% - 44px) / 2); // items margin 22px
+  }
+
+  .problems-item:not(:last-child) {
+    margin-bottom: unset;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .problems {
+    background-image: url('../images/icons/campfire.svg'),
+      linear-gradient(to bottom, $primary-black-color 80%, $primary-white-color 80%);
+    background-repeat: no-repeat, no-repeat;
+    // background-position: right -46px top 94px, 0px 0px;
+    background-position: 1273px 94px, 0px 0px;
+  }
+
+  .problems-container {
+    padding-top: 100px;
+
+    // background-image: url('../images/icons/campfire.svg');
+    // background-repeat: no-repeat;
+    // background-position: 1273px 94px;
+  }
+
+  .problems-title {
+    margin-bottom: 70px;
+    font-size: 46px;
+  }
+
+  .problems-list-block {
+    padding: 70px 114px 62px 114px;
+
+    font-size: 20px;
+    line-height: (28px / 20px); // 140%
+  }
+
+  .problems-list {
+    margin-top: -32px;
+    margin-left: -40px;
+  }
+
+  .problems-item {
+    margin-top: 32px;
+    margin-left: 40px;
+    flex-basis: calc((100% - 120px) / 3); // items margin 40px
+  }
+
+  .problems-item::before {
+    margin-bottom: 10px;
+
+    font-size: 20px;
+    line-height: (33px / 20px); //165%
+  }
+}
