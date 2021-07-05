@@ -6,18 +6,19 @@
     list-style: none;
 }
 
-.header-wrappe__order-button{
+.order-button{
 display: none;
 }
 
-.headernav__title{
+.headernav-title{
     display: flex;
     margin-left: 114px;
 }
 
-.headernav__title{
+.headernav-title{
     display: none;
 }
+
 
 .header-wrappe{
     justify-content: space-between;
@@ -27,7 +28,7 @@ display: none;
     margin-right: auto;
 }
 
-.headernav__logo{
+.desklogo{
 font-family: Montserrat;
 font-style: normal;
 font-weight: 800;
@@ -38,8 +39,7 @@ color: $primary-black-color;
 
 }
 
-    
- .headernav__footer{
+.head-footer{
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -51,17 +51,17 @@ color: $primary-black-color;
 
 }
 
-.headernav__down{
+.headernav-down{
     color: $primary-black-color;
 }
 
-.mobile-headermenu.is-open{
+.mobile-header.is-open{
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
 }
 
-.mobile-headermenu{
+.mobile-header{
     position: fixed;
     top: 0;
     left: 0;
@@ -78,13 +78,13 @@ color: $primary-black-color;
 }
 
 // Modalmenu
-.headernav__mobile-logo{
-    @extend .headernav__logo;
+.mobile-logo{
+    @extend .desklogo;
     color: white;
     margin-bottom: 50px;
 }
 
-.header-wrappe__mobileorder-button{
+.mobileorder-button{
     display: block;
     font-family: Montserrat;
     font-style: normal;
@@ -100,10 +100,9 @@ color: $primary-black-color;
     padding: 27px 24px;
     margin-left: auto;
     margin-right: auto;
-    // margin-right: 40px;
 }
 
-.mobile-headermenu__container{
+.mobile-headermenu{
     display: flex;
     flex-direction: column;
     padding: 38px 30px;
@@ -112,7 +111,7 @@ color: $primary-black-color;
     height: 100%;
 }
 
-.mobile-headermenu__close-button{
+.close-button{
     border: none;
     background-color: transparent;
     position: absolute;
@@ -122,42 +121,48 @@ color: $primary-black-color;
     padding: 0;
     margin-right: 15px;
     margin-top: 5px;
-
 }
 
-.mobile-mobilemenu__link{font-family: Montserrat;
- font-style: normal;
- font-weight: 800;
- font-size: 20px;
- line-height: 180%;
- letter-spacing: 0.03em;
- color: #FFFFFF;
+.mobile-link{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 180%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
-.headernav__mobiledown{
+.mobile-link:hover,
+.mobile-link:focus{
+    color: $accent-color;
+}
+
+.mobiledown{
     color: $primary-white-color;
-
 }
 
-.mobile-headermenu__mobilehero{
+.mobilehero{
     margin-bottom: 50px;
     text-align: left;
     align-self: center;
 }
 
 
+  .mobile-link.mobilemenu-current{
+    color: $accent-color;
+
+  }
+
+
 // =================================================
 
 @media screen and (min-width:768px) {
-    .header-wrappe__order-button{
+.order-button{
         display: block;
         }
 
-
-.header-wrappe__mobileorder-button{
-    display:none;
-
-}
 
 
 .header-wrappe{
@@ -168,7 +173,7 @@ color: $primary-black-color;
     margin-right: auto;
 }
 
-.header-wrappe__order-button{
+.order-button{
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -192,19 +197,27 @@ color: $primary-black-color;
     .mobile-headermenu.is-open{
         display: none;
     }
-
-
-    
-    .header-wrappe__mobile-button{
+   
+    .mobile-button{
         display: none;
     }
 
     
-    .headernav__title{
+      .head-main.headermenu-current{
+        color: $accent-color;
+    
+      }
+      .order-button{
+          margin-right: auto;
+      }
+
+
+    
+    .headernav-title{
         display: flex;
         margin-left: 114px;
     }
-    .headernav__link:not(:last-child){
+    .head-link:not(:last-child){
         margin-right: 40px;
     }
     
@@ -214,19 +227,25 @@ color: $primary-black-color;
     }
 
             
-    .headernav__main{
+    .head-main{
+    text-decoration: none;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.21;
-    
     display: flex;
     align-items: center;
     text-align: center;
     text-transform: uppercase;
     color: $primary-text-color;
     }
+
+    .head-main:hover,
+    .head-main:focus{
+        color: $accent-color;
+    }
+
     
     
 }
