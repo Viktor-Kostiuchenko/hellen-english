@@ -7,6 +7,7 @@
 .review-title {
   text-align: center;
   margin-bottom: 20px;
+  color: $primary-black-color;
 }
 
 .comments-list {
@@ -67,5 +68,30 @@
 
   .comments-item {
     display: flex;
+  }
+
+  .commentators-name {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .review-title {
+    font-size: 46px;
+  }
+  .commentators-name {
+    font-size: 30px;
+    line-height: 1.23;
+  }
+
+  .comment-title {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+  .comment-text {
+    font-size: 18px;
+    line-height: 1.55;
   }
 }
