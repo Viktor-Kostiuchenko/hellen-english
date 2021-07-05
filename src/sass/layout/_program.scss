@@ -2,7 +2,8 @@
 .program {
   background-color: $primary-black-color;
   padding-top: 50px;
-  padding-bottom: 537px;
+  padding-bottom: 50px;
+  position: relative;
 }
 .program-title {
   font-weight: 800;
@@ -119,7 +120,7 @@
 @media screen and (min-width: 768px) and (max-width: 1365px) {
   .program {
     padding-top: 60px;
-    padding-bottom: 392px;
+    padding-bottom: 189px;
   }
   .program-title {
     font-size: 26px;
@@ -186,7 +187,7 @@
 @media screen and (min-width: 1366px) {
   .program {
     padding-top: 120px;
-    padding-bottom: 363px;
+    padding-bottom: 164px;
     position: relative;
     &::before {
       content: '';
