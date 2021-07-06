@@ -1,6 +1,6 @@
 .guar {
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding-top: 50px;
+  
 }
 
 .guar-list {
@@ -19,15 +19,7 @@
 
 .guar-item {
   position: relative;
-  box-sizing: content-box;
   padding-left: 28px;
-
-  font-size: 12px;
-  line-height: 1.67;
-  letter-spacing: 0.03em;
-  font-style: normal;
-  
-  text-align: left;
 
   &:not(:last-child) {
     padding-bottom: 23px;
@@ -58,10 +50,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .guar {
-    padding-top: 65px;
-    padding-bottom: 65px;
-  }
+  
   .guar-list {
     padding: 30px 50px 30px 80px;
   }
@@ -72,9 +61,13 @@
   }
   .guar-titel {
    font-size: 46px;
+   margin-bottom: 50px;
   }
   .guar-item {
     font-size: 20px;
     line-height: 1.4;
+    &:not(:last-child) {
+      padding-bottom: 20px;
+    }
   }
 }
