@@ -89,16 +89,16 @@ ol {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  padding: 15px 10px;
-  border: none;
+  padding: 15px 0;
   width: 260px;
-  height: 48px;
+  border: 2px solid #ff6b09;
   text-align: center;
   white-space: nowrap;
   font-family: Montserrat;
   font-weight: 700;
   font-size: 12px;
-  line-height: 1.2;
+  line-height: 1.22;
+  letter-spacing: 0.08em;
   background-color: #ff6b09;
   text-transform: uppercase;
   color: white;
@@ -107,20 +107,22 @@ ol {
 
 @media screen and (min-width: 1366px) {
   .button {
+    padding: 25px 0;
     width: 354px;
-    height: 70px;
     font-size: 14px;
+    letter-spacing: 0.1em;
   }
 }
 
-.botton-heder-desk {
+.botton-heder {
   border: 2px solid #ff6b09;
+  font-style: 14px;
   background-color: transparent;
   color: #ff6b09;
 }
 
 @media screen and (min-width: 1366px) {
-  .botton-heder-desk {
+  .botton-heder {
     width: 336px;
   }
 }
@@ -157,6 +159,83 @@ ol {
   }
 }
 
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+.slider {
+  padding-right: 49px;
+  padding-left: 49px;
+}
+
+@media screen and (max-width: 767px) {
+  .slider {
+    position: relative;
+  }
+}
+
+.slider-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slick-center {
+  opacity: 1;
+}
+
+/* Стрелка */
+.slick-arrow {
+  height: 16px;
+  width: 25px;
+  font-size: 0px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+  border: none;
+  background-color: inherit;
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+  left: 0;
+  background-image: url(../images/icons/arrow1.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+  right: 0;
+  background-image: url(../images/icons/arrow2.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
 .advantages {
   padding: 43px 0;
 }
@@ -628,6 +707,123 @@ ol {
   }
 }
 
+.review {
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.review-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #111518;
+}
+
+.comments-list {
+  margin-bottom: 62px;
+}
+
+.commentators-photo {
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vk-icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.comments-item {
+  text-align: center;
+}
+
+.commentators-name {
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #ff6b09;
+}
+
+.comment-title {
+  font-size: 12px;
+  line-height: 1.25;
+  margin-bottom: 25px;
+  color: #b9b9b9;
+}
+
+.comment-text {
+  letter-spacing: 0.01em;
+  color: #3d3d3d;
+}
+
+.text-box {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.comments-link {
+  color: #ff6b09;
+}
+
+@media screen and (min-width: 768px) {
+  .commentators-photo {
+    min-width: 150px;
+  }
+  .left-side-review {
+    margin-right: 46px;
+  }
+  .review-title {
+    margin-bottom: 50px;
+    font-size: 26px;
+  }
+  .comments-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .commentators-name {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .text-box {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .left-side-review {
+    margin-right: 40px;
+  }
+  .review {
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  .review-title {
+    font-size: 46px;
+  }
+  .commentators-name {
+    font-size: 30px;
+    line-height: 1.23;
+  }
+  .comment-title {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+  .comment-text {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+  .text-box {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .contacts-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -719,7 +915,7 @@ ol {
 
 @media screen and (min-width: 1366px) {
   .contacts-title {
-    width: 1090px;
+    width: 1000px;
     height: 170px;
     font-size: 46px;
   }
@@ -727,7 +923,7 @@ ol {
 
 .contacts-text {
   display: inline-block;
-  width: 280px;
+  width: 285px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -750,7 +946,7 @@ ol {
 @media screen and (min-width: 1366px) {
   .contacts-text {
     margin-bottom: 54px;
-    width: 1090px;
+    width: 950px;
     height: 71px;
     font-size: 30px;
   }

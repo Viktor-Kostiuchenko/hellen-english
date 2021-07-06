@@ -1,0 +1,49 @@
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+
+.slider {
+  position: relative;
+  padding-right: 49px;
+  padding-left: 49px;
+}
+
+.slider-item {
+  display: flex;
+  justify-content: center;
+}
+
+.slick-center {
+  opacity: 1;
+}
+
+/* Стрелка */
+.slick-arrow {
+  height: 16px;
+  width: 25px;
+  font-size: 0px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  border: none;
+  background-color: inherit;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+  left: 0;
+  background-image: url(../images/icons/arrow1.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+  right: 0;
+  background-image: url(../images/icons/arrow2.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
