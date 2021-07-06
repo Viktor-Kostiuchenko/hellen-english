@@ -35,7 +35,7 @@
 }
 
 .fotar-end{
-    padding: 22px 26px;
+    padding: 22px;
     background-color: black;
 }
 
@@ -51,8 +51,8 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 2;
-    display: flex;
-    align-items: center;
+    display: block;
+    text-align: center;
     color: #B9B9B9;
 }
 
@@ -87,6 +87,14 @@
 
     }
 
+    .fotar-end{
+        padding: 40px;
+    }
+
+    .avtor{
+    display: flex;
+    align-items: center;}
+
     
 }
 
@@ -98,12 +106,16 @@
         line-height: 1.23;
 }
 
+.fotar-end{
+    padding: 40px 182px;
+}
+
 .footer-contact{
     margin-left: 225px;
 }
 .contact{
 justify-content: unset;
-padding: 52px ;
+padding: 52px 182px;
 
 }
         
