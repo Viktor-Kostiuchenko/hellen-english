@@ -1,40 +1,38 @@
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop" data-modal>
   <div class="modal__order-service">
     <button class="modal__close-btn" type="button" data-modal-close>
-         <svg class="modal__close-icon">
-            <use href="./images/icons/sprite.svg#icon-close-modal"></use>
-          </svg> 
+      <svg class="modal__close-icon">
+        <use href="./images/icons/sprite.svg#icon-close-modal"></use>
+      </svg>
     </button>
     <p class="modal__appeal">We will contact you soon</p>
     <form action="#" class="modal__form">
       <label class="modal__form-field">
         Name
         <span class="modal__form-wrapper">
-          <input class="modal__form-input" type="text" name="user-name" />
-
-            <svg class="modal__form-icon">
-                <use href="./images/icons/sprite.svg#icon-person-modal"></use>
-              </svg> 
-        </span> </label
-      ><label class="modal__form-field"></label>
+          <input class="modal__form-input" type="text" name="user-name" required />
+          <svg class="modal__form-icon">
+            <use href="./images/icons/sprite.svg#icon-person-modal"></use>
+          </svg>
+        </span>
+      </label>
+      <label class="modal__form-field">
         Phone
         <span class="modal__form-wrapper">
-          <input class="modal__form-input" type="tel" name="user-phone" />
-          <!--              <svg class="modal__form-icon">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg> -->
-        </span> </label
-      >
-      <label class="modal__form-field"
-        >Comment
+          <input class="modal__form-input" type="tel" name="user-phone" required />
+          <svg class="modal__form-icon">
+            <use href="./images/icons/sprite.svg#icon-phone-modal"></use>
+          </svg>
+        </span>
+      </label>
+      <label class="modal__form-field">
+        Comment
         <textarea
           name="user-message"
           class="modal__form-text"
-          placeholder="
-enter mesage"
+          placeholder="enter your message"
         ></textarea>
       </label>
-
       <button class="modal__form-submit-btn" type="submit">Send</button>
     </form>
   </div>
