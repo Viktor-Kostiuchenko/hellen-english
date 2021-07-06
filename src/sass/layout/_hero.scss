@@ -1,36 +1,38 @@
 .hero {
    padding: 22px 0 47px;
    // background-repeat: no-repeat;
-   // background-position: center;
-   // background-size: 480px 100%;
-
-   //   background-image: url(../images/content/mobile/hero-bg-mob.webp);
-   //   background-color: red;
-
-
-   // background-image: linear-gradient(140deg, rgba(0,0,0,0.04) 0%, rgba(0,0,0,0) 12%, rgba(0,0,0,0) 100%),
-   // url(../images/content/mobile/hero-bg-mob.webp);
+   // background-position: left bottom -47px;
+   // background-size: cover;
    // background-color: rgba(0, 0, 0, 0.04);
-   // box-shadow: -5px 21px 26px red;;
- 
+   background-image: url(../images/icons/hero-bg-mob.svg);
+
    @media screen and (min-width: 768px) {
      padding: 44px 0 64px;
-   //   background-size: 768px 100%;
+   //   background-position: left bottom -47px;
+   
    //   background-image: url(../images/content/tablet/hero-bg-tab.webp);
    }
  
    @media screen and (min-width: 1366px) {
      padding: 16px 0 10px;
+
+   //   background-repeat: no-repeat;
    //   background-size: 1366px 100%;
    //   background-image: url(../images/content/desktop/hero-bg-desk.webp);
    }
  }
 
 .hero-container {
+   
    @media screen and (min-width: 768px) {
+      position: relative;
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    @media screen and (min-width: 1366px) {
+      padding: 54px 0 250px;
     }
 } 
 
@@ -46,6 +48,7 @@
    
    @media screen and (min-width: 768px) {
       width: 332px;
+      margin-left: 0;
    }
 
    @media screen and (min-width: 1366px) {
@@ -77,7 +80,7 @@
    font-size: 14px;
    line-height: 1.57;
    color: $primary-text-color;
-   outline: 1px solid tomato;
+
 
    @media screen and (min-width: 1366px) {
       font-size: 20px;
@@ -93,7 +96,7 @@
    font-weight: 700; 
    font-size: 14px;
    line-height: 1.57;
-   outline: 1px solid tomato;
+
 
    @media screen and (min-width: 1366px) {
       font-size: 20px;
@@ -116,15 +119,15 @@
 
 }
 
-.hero-wrapper {
+.hero-background{
    @keyframes fade-in {
-0% {
-   opacity: 0;
-}
+      0% {
+         opacity: 0;
+      }
 
-100% {
-   opacity: 1;
-}
+      100% {
+         opacity: 1;
+      }
 
       // 0% {
       //   transform: scale(1);
@@ -146,21 +149,22 @@
       //   transform: scale(1);
       // }
     }
+}
     
-    .hero-background {
+.hero-background {
       animation-name: fade-in;
       animation-duration: 1000ms;
       animation-timing-function: ease-in-out;
-    }
-
-
-
+    
    @media screen and (max-width: 767px) {
       width: 208px;
       margin: 0 auto;
    }
 
    @media screen and (min-width: 768px) {
+      position: absolute;
+      top: 0;
+      right: 0;
       width: 376px;
    }
 
