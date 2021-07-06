@@ -37,7 +37,6 @@
  }
 
 .hero-container {
-   
    @media screen and (min-width: 768px) {
       position: relative;
       display: flex;
@@ -73,6 +72,19 @@
       width: 520px;
    }
 
+.hero-text-block {
+   margin-bottom: 52px; 
+
+   transform: translate(0px, 120%);
+   opacity: 0;
+   transition: all 1000ms ease 0ms;
+
+}
+
+.hero-text-block._active {
+   transform: translate(0px, 0px);
+   opacity: 1;
+}
    
 }
 .hero-title {
@@ -93,6 +105,7 @@
       font-size: 58px;
    }
 }
+
 
 .hero-text {
    font-size: 14px;
@@ -131,48 +144,30 @@
    align-items: center;
    justify-content: center;
 
+
+   opacity: 0;
+   transition: opacity 700ms ease 0ms;
+
    @media screen and (min-width: 768px) {
       margin-left: 0;
    }
+}
 
+.hero-button._active {
+   opacity: 1;
+   transition: opacity 1000ms ease 400ms;
 }
 
 .hero-background{
-   @keyframes fade-in {
-      0% {
-         opacity: 0;
-      }
+   transform: scale(0);
+   transition: transform 1000ms ease 0ms;
+}
 
-      100% {
-         opacity: 1;
-      }
-
-      // 0% {
-      //   transform: scale(1);
-      // }
-    
-      // 14% {
-      //   transform: scale(1.15);
-      // }
-    
-      // 28% {
-      //   transform: scale(1);
-      // }
-    
-      // 42% {
-      //   transform: scale(1.15);
-      // }
-    
-      // 70% {
-      //   transform: scale(1);
-      // }
-    }
+.hero-wrapper._active .hero-background {
+   transform: scale(1);
 }
     
 .hero-background {
-      animation-name: fade-in;
-      animation-duration: 1000ms;
-      animation-timing-function: ease-in-out;
     
    @media screen and (max-width: 767px) {
       width: 208px;

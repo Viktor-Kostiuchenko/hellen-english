@@ -11,6 +11,15 @@
 
 .how-we-do-list {
   text-align: center;
+
+  transform: translate(-100%, 0px);
+  transition: transform 1000ms ease 0ms;
+  opacity: 0;
+}
+
+.how-we-do-list._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .how-we-do-item {
