@@ -72,6 +72,7 @@
 .how-we-do-item:hover {
   color: $primary-white-color;
   background-color: $accent-color;
+  cursor: pointer;
 }
 
 .how-we-do-item:hover .how-we-do-item-title::after,
