@@ -39,15 +39,12 @@
 }
 
 .comment-title {
-  font-size: 12px;
   line-height: 1.25;
   margin-bottom: 25px;
   color: $primary-text-color;
 }
 
 .comment-text {
-  font-size: 12px;
-  line-height: 1.66;
   letter-spacing: 0.01em;
   color: $secondary-text-color;
 }
@@ -62,7 +59,32 @@
 }
 
 @media screen and (min-width: 768px) {
+  .review-container {
+    padding-left: 53px;
+    padding-right: 53px;
+  }
+
+  .review-container {
+    position: relative;
+  }
+
+  .comments-list {
+    margin-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  }
+
+  .commentators-photo {
+    min-width: 150px;
+  }
+
+  .left-side-review {
+    margin-right: 46px;
+  }
+
   .review-title {
+    margin-bottom: 30px;
     font-size: 26px;
   }
 
@@ -74,12 +96,37 @@
     font-size: 20px;
     line-height: 1.2;
   }
+
+  .text-box {
+    text-align: start;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media screen and (min-width: 1366px) {
+  .left-side-review {
+    margin-right: 40px;
+  }
+
+  .review {
+    padding-left: 86px;
+    padding-right: 86px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
   .review-title {
     font-size: 46px;
   }
+
+  .comments-list {
+    padding-left: 142px;
+    padding-right: 142px;
+    padding-top: 50px;
+    margin-bottom: 62px;
+  }
+
   .commentators-name {
     font-size: 30px;
     line-height: 1.23;
@@ -88,10 +135,16 @@
   .comment-title {
     font-size: 14px;
     line-height: 1.21;
+    margin-bottom: 20px;
   }
 
   .comment-text {
     font-size: 18px;
     line-height: 1.55;
+  }
+
+  .text-box {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

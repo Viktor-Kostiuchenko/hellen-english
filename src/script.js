@@ -1,13 +1,25 @@
 $(function () {
     $('.slider').slick({
-        slidesToShow: 3,
+        slidesToShow: 7,
         speed: 600,
         initialSlide: 0,
-        asNavFor:".comments-list"
+        asNavFor: ".comments-list",
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow:3
+            }
+        }]
+        
     });
     $('.comments-list').slick({
-        arrows: false,
-        fade: true,
-        asNavFor:".slider"
+        arrows: true,
+        asNavFor: ".slider",
+         responsive: [{
+            breakpoint: 768,
+            settings: {
+                arrows:false,
+            }
+        }]
     })
 })

@@ -85,6 +85,46 @@ ol {
   }
 }
 
+.button {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 10px;
+  border: none;
+  width: 260px;
+  height: 48px;
+  text-align: center;
+  white-space: nowrap;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.2;
+  background-color: #ff6b09;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1366px) {
+  .button {
+    width: 354px;
+    height: 70px;
+    font-size: 14px;
+  }
+}
+
+.botton-heder-desk {
+  border: 2px solid #ff6b09;
+  background-color: transparent;
+  color: #ff6b09;
+}
+
+@media screen and (min-width: 1366px) {
+  .botton-heder-desk {
+    width: 336px;
+  }
+}
+
 .title {
   font-style: normal;
   font-weight: 800;
@@ -117,63 +157,83 @@ ol {
   }
 }
 
-.review {
-  background-color: white;
-  padding-top: 50px;
-  padding-bottom: 50px;
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
 }
 
-.review-title {
-  text-align: center;
-  margin-bottom: 20px;
+/* Лента слайдов */
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.comments-list {
-  margin-bottom: 20px;
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+.slider {
+  padding-right: 49px;
+  padding-left: 49px;
 }
 
-.commentators-photo {
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.vk-icon {
-  width: 30px;
-  height: 30px;
-  margin-bottom: 20px;
-}
-
-.comments-item {
-  text-align: center;
-}
-
-.commentators-name {
-  margin-bottom: 10px;
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 1.21;
-  color: #ff6b09;
-}
-
-.comment {
-  font-size: 12px;
-  line-height: 1.25;
-  margin-bottom: 25px;
-  color: #b9b9b9;
-}
-
-.text-box {
-  padding-bottom: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.comments-link {
-  color: #ff6b09;
+@media screen and (max-width: 767px) {
+  .slider {
+    position: relative;
   }
 }
 
+.slider-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slick-center {
+  opacity: 1;
+}
+
+/* Стрелка */
+.slick-arrow {
+  height: 16px;
+  width: 25px;
+  font-size: 0px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+  border: none;
+  background-color: inherit;
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+  left: 0;
+  background-image: url(../images/icons/arrow1.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+  right: 0;
+  background-image: url(../images/icons/arrow2.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
 .advantages {
   padding: 43px 0;
 }
@@ -642,6 +702,123 @@ ol {
             clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+  }
+}
+
+.review {
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.review-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #111518;
+}
+
+.comments-list {
+  margin-bottom: 62px;
+}
+
+.commentators-photo {
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vk-icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.comments-item {
+  text-align: center;
+}
+
+.commentators-name {
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #ff6b09;
+}
+
+.comment-title {
+  font-size: 12px;
+  line-height: 1.25;
+  margin-bottom: 25px;
+  color: #b9b9b9;
+}
+
+.comment-text {
+  letter-spacing: 0.01em;
+  color: #3d3d3d;
+}
+
+.text-box {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.comments-link {
+  color: #ff6b09;
+}
+
+@media screen and (min-width: 768px) {
+  .commentators-photo {
+    min-width: 150px;
+  }
+  .left-side-review {
+    margin-right: 46px;
+  }
+  .review-title {
+    margin-bottom: 50px;
+    font-size: 26px;
+  }
+  .comments-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .commentators-name {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .text-box {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .left-side-review {
+    margin-right: 40px;
+  }
+  .review {
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+  .review-title {
+    font-size: 46px;
+  }
+  .commentators-name {
+    font-size: 30px;
+    line-height: 1.23;
+  }
+  .comment-title {
+    font-size: 14px;
+    line-height: 1.21;
+  }
+  .comment-text {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+  .text-box {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
