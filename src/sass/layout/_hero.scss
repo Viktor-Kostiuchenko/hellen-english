@@ -73,6 +73,19 @@
       width: 520px;
    }
 
+   .hero-text-block {
+   margin-bottom: 52px; 
+
+   transform: translate(0px, 120%);
+   opacity: 0;
+   transition: all 700ms ease 0ms;
+
+   }
+
+   .hero-text-block._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+   }
    
 }
 .hero-title {
@@ -93,6 +106,7 @@
       font-size: 58px;
    }
 }
+
 
 .hero-text {
    font-size: 14px;
@@ -131,11 +145,22 @@
    align-items: center;
    justify-content: center;
 
+   transform: translateX(-130%);
+   opacity: 0;
+   transition: transform 700ms ease 0ms;
+
    @media screen and (min-width: 768px) {
       margin-left: 0;
    }
-
 }
+
+.hero-button._active {
+   transform: translateY(0px);
+   opacity: 1;
+   transition: transform 700ms ease 400ms;
+}
+
+
 
 .hero-background{
    @keyframes fade-in {
