@@ -21,6 +21,11 @@
   opacity: 1;
 }
 
+.slick-current .slider-image {
+  border-radius: 50%;
+  border: 2px solid $accent-color;
+}
+
 /* Стрелка */
 .slick-arrow {
   height: 16px;
