@@ -1,0 +1,150 @@
+.review {
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.review-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: $primary-black-color;
+}
+
+.comments-list {
+  margin-bottom: 62px;
+}
+
+.commentators-photo {
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vk-icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.comments-item {
+  text-align: center;
+}
+
+.commentators-name {
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.21;
+  color: $accent-color;
+}
+
+.comment-title {
+  line-height: 1.25;
+  margin-bottom: 25px;
+  color: $primary-text-color;
+}
+
+.comment-text {
+  letter-spacing: 0.01em;
+  color: $secondary-text-color;
+}
+
+.text-box {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.comments-link {
+  color: $accent-color;
+}
+
+@media screen and (min-width: 768px) {
+  .review-container {
+    padding-left: 53px;
+    padding-right: 53px;
+  }
+
+  .review-container {
+    position: relative;
+  }
+
+  .comments-list {
+    margin-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  }
+
+  .commentators-photo {
+    min-width: 150px;
+  }
+
+  .left-side-review {
+    margin-right: 46px;
+  }
+
+  .review-title {
+    margin-bottom: 30px;
+    font-size: 26px;
+  }
+
+  .comments-item {
+    display: flex;
+  }
+
+  .commentators-name {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .text-box {
+    text-align: start;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .left-side-review {
+    margin-right: 40px;
+  }
+
+  .review {
+    padding-left: 86px;
+    padding-right: 86px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .review-title {
+    font-size: 46px;
+  }
+
+  .comments-list {
+    padding-left: 142px;
+    padding-right: 142px;
+    padding-top: 50px;
+    margin-bottom: 62px;
+  }
+
+  .commentators-name {
+    font-size: 30px;
+    line-height: 1.23;
+  }
+
+  .comment-title {
+    font-size: 14px;
+    line-height: 1.21;
+    margin-bottom: 20px;
+  }
+
+  .comment-text {
+    font-size: 18px;
+    line-height: 1.55;
+  }
+
+  .text-box {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

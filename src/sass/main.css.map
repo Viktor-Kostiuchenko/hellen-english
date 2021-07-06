@@ -12,6 +12,7 @@
         "components/_button.scss",
         "components/_mobile-menu.scss",
         "components/_title.scss",
+        "components/_slider.scss",
         "layout/_header.scss",
         "layout/_hero.scss",
         "layout/_advantages.scss",
