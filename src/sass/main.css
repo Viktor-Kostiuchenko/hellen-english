@@ -89,16 +89,16 @@ ol {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  padding: 15px 10px;
-  border: none;
+  padding: 15px 0;
   width: 260px;
-  height: 48px;
+  border: 2px solid #ff6b09;
   text-align: center;
   white-space: nowrap;
   font-family: Montserrat;
   font-weight: 700;
   font-size: 12px;
-  line-height: 1.2;
+  line-height: 1.22;
+  letter-spacing: 0.08em;
   background-color: #ff6b09;
   text-transform: uppercase;
   color: white;
@@ -107,20 +107,22 @@ ol {
 
 @media screen and (min-width: 1366px) {
   .button {
+    padding: 25px 0;
     width: 354px;
-    height: 70px;
     font-size: 14px;
+    letter-spacing: 0.1em;
   }
 }
 
-.botton-heder-desk {
+.botton-heder {
   border: 2px solid #ff6b09;
+  font-style: 14px;
   background-color: transparent;
   color: #ff6b09;
 }
 
 @media screen and (min-width: 1366px) {
-  .botton-heder-desk {
+  .botton-heder {
     width: 336px;
   }
 }
@@ -913,7 +915,7 @@ ol {
 
 @media screen and (min-width: 1366px) {
   .contacts-title {
-    width: 1090px;
+    width: 1000px;
     height: 170px;
     font-size: 46px;
   }
@@ -921,7 +923,7 @@ ol {
 
 .contacts-text {
   display: inline-block;
-  width: 280px;
+  width: 285px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -944,7 +946,7 @@ ol {
 @media screen and (min-width: 1366px) {
   .contacts-text {
     margin-bottom: 54px;
-    width: 1090px;
+    width: 950px;
     height: 71px;
     font-size: 30px;
   }

@@ -1,18 +1,23 @@
-<article class="contacts-section">
-  <h2 class="contacts-title list">Registration for a <span class="contacts-title--color-word">free</span> phone <span
-      class="contacts-title--color-word">consultation</span> on the nuances of English UPE</h2>
-  <p class="contacts-text list">Leave a request for participation in a <span class="contacts-title--color-word">free
+<section class="contacts" id="registration">
+  <h2 class="contacts-title">Registration for a <span class="section-title-accent">free</span> phone <span
+      class="section-title-accent">consultation</span> on the nuances of English UPE</h2>
+  <p class="contacts-text">Leave a request for participation in a <span class="section-title-accent">free
       lesson</span>.<br> A consultant will contact you and answer your questions</p>
 
   <form class="contacts-form">
-    <label class="contacts-form__legend" for="username">
-      <input class="contacts-form__name--input list" type="text" name="user-name" id="username" placeholder="Name"
-        required autocomplete="off" /></label>
-    <label class="contacts-form__legend" for="phone">
-      <input class="contacts-form__phone--input list" type="tel" name="user-tel" id="phone" placeholder="Phone"
-        autocomplete="off" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="096-111-11-11" /></label>
+    <div class="form-wrapper position-name">
+      <input class="contacts-form-input invalid-input" type="text" name="user-name" id="username" placeholder=" "
+        autocomplete="off" pattern="[A-Za-zА-Яа-яЁё]{4,}" title="не менее 4 буквы" />
+      <label class="form-label" for="username">Name*</label>
+    </div>
+
+    <div class="form-wrapper position-phone">
+      <input class="contacts-form-input invalid-input" type="tel" name="user-tel" id="phone" placeholder=" "
+        autocomplete="off" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="000-000-00-00" />
+      <label class="form-label" for="phone">Phone*</label>
+    </div>
 
     <button type="submit" class="button">i want a free lesson</button>
   </form>
 
-</article>
+</section>
