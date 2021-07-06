@@ -16,12 +16,23 @@
 
   font-weight: 700;
   font-size: 14px;
-  line-height: (20px / 14px); //143%
+  line-height: (20px / 14px);
 
   color: $primary-black-color;
   background-color: $primary-white-color;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  transform: translate(100%, 0px);
+  transition: transform 1000ms ease 0ms;
+  opacity: 0;
 }
+
+.problems-list-block._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
+
 
 .problems-list {
   counter-reset: section;
