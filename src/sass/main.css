@@ -401,17 +401,7 @@ ol {
 }
 
 .program-list::after {
-  content: '';
-  display: block;
-  position: absolute;
-  background: url("../images/content/mobile/program-mob@2x.png");
-  background-size: contain;
-  opacity: 0.5;
-  width: 120px;
-  height: 137px;
-  bottom: -97px;
-  right: -20px;
-}
+
 
 .program-item {
   position: relative;
