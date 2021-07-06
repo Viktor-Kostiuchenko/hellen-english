@@ -1,0 +1,27 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $backdrop;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity $modal-time $backdrop-transition, visibility $modal-time $backdrop-transition;
+  overflow-y: auto;
+}
+@media screen and (max-width: 480px) {
+  .backdrop {
+    padding: 0 15px;
+  }
+}
+.is-hidden {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.no-scrol {
+  overflow: hidden;
+}
