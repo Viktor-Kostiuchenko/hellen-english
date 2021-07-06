@@ -56,14 +56,26 @@
 }
 
 .about-item {
+  position: relative;
   padding-bottom: 25px;
   text-align: left;
   display: flex;
 
   &::before {
+    position: absolute;
     content: '';
     display: block;
     background-image: url('../images/icons/checked.svg');
+
+    width: 17px;
+    height:14px;
+    top: 1px;;
+    left: -25px; 
+    
+
+    background-position: center;
+    background-size:100%;
+    background-repeat: no-repeat;
   }
 }
 .about-check {
