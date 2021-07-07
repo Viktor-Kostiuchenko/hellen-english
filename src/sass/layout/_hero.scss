@@ -1,28 +1,26 @@
 .hero {
    padding: 22px 0 47px;
    background-repeat: no-repeat;
-   background-position: center bottom -25px;
+   background-position: left -64px bottom -25px;
+   background-size: cover;
 
-   background-image: url(../images/content/mobile/hero-bg-mob.png);
+   background-image: url(../images/content/tablet/hero-bg-tab.png);
 
-   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/content/mobile/hero-bg-mob@2x.png);
-   }
+   @media (min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+   background-image: url(../images/content/tablet/hero-bg-tab@2x.png);
+ }
 
    @media screen and (min-width: 768px) {
-      padding: 44px 0 64px;
-      background-position: center bottom;
+     padding: 44px 0 64px;
+     background-position: center bottom;
 
-      background-image: url(../images/content/tablet/hero-bg-tab.png);
-
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-         background-image: url(../images/content/tablet/hero-bg-tab@2x.png);
-      }
    }
 
    @media screen and (min-width: 1366px) {
-      padding: 16px 0 10px;
-      background-image: url(../images/content/desktop/hero-bg-desk.png);
+     padding: 11px 0 10px;
+     background-image: url(../images/content/desktop/hero-bg-desk.png);
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
          background-image: url(../images/content/desktop/hero-bg-desc@2x.png);
@@ -77,6 +75,7 @@
       opacity: 1;
    }
 }
+
 .hero-title {
    margin-bottom: 8px;
 
@@ -126,17 +125,19 @@
    color: $accent-color;
 }
 
+.hero-content .btn-wrapper {
+   @media screen and (min-width: 768px) {
+      margin-left: 0;
+   }
+}
+
 .hero-button {
    display: flex;
    align-items: center;
    justify-content: center;
 
    opacity: 0;
-   transition: opacity 700ms ease 0ms;
-
-   @media screen and (min-width: 768px) {
-      margin-left: 0;
-   }
+   transition: opacity 1000ms ease 0ms;
 }
 
 .hero-button:hover {
@@ -147,7 +148,6 @@
 
 .hero-button._active {
    opacity: 1;
-   transition: opacity 1000ms ease 400ms;
 }
 
 .hero-background {
