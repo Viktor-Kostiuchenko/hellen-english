@@ -1,20 +1,16 @@
 .guar {
   padding-top: 50px;
-  
 }
 
 .guar-list {
   padding: 50px 20px;
   background-color: #f1f1f1;
-  list-style: none;
-  
 }
 
 .guar-titel {
   font-size: 26px;
   text-align: center;
   margin-bottom: 30px;
- 
 }
 
 .guar-item {
@@ -23,21 +19,18 @@
 
   &:not(:last-child) {
     padding-bottom: 23px;
-    border-left: 1px dashed #b9b9b9;
+    border-left: 1px dashed $primary-text-color;
   }
 
   &::before {
     position: absolute;
-    display: block;
+
     content: '';
     background-image: url(../images/icons/fire.svg);
 
     width: 15px;
     height: 20px;
-    top: 0px;
     left: -8px;
-    padding-bottom: 5px;
-    padding-top: 5px;
 
     background-repeat: no-repeat;
     background-position: center;
@@ -50,7 +43,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  
   .guar-list {
     padding: 30px 50px 30px 80px;
   }
@@ -60,8 +52,8 @@
     padding: 50px 112px 45px 112px;
   }
   .guar-titel {
-   font-size: 46px;
-   margin-bottom: 50px;
+    font-size: 46px;
+    margin-bottom: 50px;
   }
   .guar-item {
     font-size: 20px;
