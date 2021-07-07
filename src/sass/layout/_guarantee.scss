@@ -57,6 +57,13 @@
   .guar-item {
     font-size: 20px;
     line-height: 1.4;
+
+    &::before {
+      width: 22px;
+      height: 30px;
+      left: -11px;
+    }
+
     &:not(:last-child) {
       padding-bottom: 20px;
     }
