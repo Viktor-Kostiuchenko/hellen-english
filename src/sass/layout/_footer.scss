@@ -9,9 +9,6 @@
   margin-bottom: 20px;
 }
 
-.footer-logo-text {
-}
-
 .copyright {
   background-color: black;
   text-align: start;
@@ -33,6 +30,12 @@
   line-height: 1.21;
   margin-bottom: 30px;
   color: $primary-black-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .phone-icon {

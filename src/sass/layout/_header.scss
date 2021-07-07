@@ -5,34 +5,7 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.header-logo {
-  color: $primary-black-color;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 5px;
-  line-height: 1.2;
-  letter-spacing: 0.18em;
-}
-.header-logo-text {
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.04em;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  text-transform: none;
-  margin-bottom: 4px;
-}
-.header-logo-icon {
-  margin-left: 4px;
-  margin-right: 4px;
-  width: 14px;
-  height: 19px;
-}
-.logo-text-accent {
-  color: $accent-color;
-}
+
 .header-nav-list,
 .header-order-button {
   display: none;
@@ -48,21 +21,6 @@
 }
 //-------------tablet------------------------
 @media screen and (min-width: 768px) {
-  .header-logo {
-    color: $primary-black-color;
-    font-weight: 700;
-    font-size: 8px;
-    line-height: 1.25;
-    letter-spacing: 0.18em;
-    .header-logo-icon {
-      width: 22px;
-      height: 30px;
-    }
-  }
-  .header-logo-text {
-    font-size: 26px;
-    line-height: 1.23;
-  }
   .header-order-button {
     display: block;
   }
