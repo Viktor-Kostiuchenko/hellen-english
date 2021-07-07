@@ -2,21 +2,27 @@
   padding-top: 40px;
 }
 .about-list {
+  position: relative;
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.21;
   font-weight: 600;
   letter-spacing: 0.06em;
   color: $primary-black-color;
+  padding-left: 27px;
+
   &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
     content: '';
     display: block;
     background-color: $accent-color;
     height: 2px;
     width: 18px;
-    padding-left: 27px;
   }
 }
+
 .text-descr {
   color: $primary-text-color;
   font-size: 12px;
@@ -94,13 +100,15 @@
     flex-direction: column;
     font-size: 12px;
     line-height: 1.25;
-    margin-top: 20px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     margin-left: 50px;
   }
 
   .about-item {
     padding-bottom: 30px;
+    &:last-child {
+      padding-bottom: 50px;
+    }
   }
   .about-tab {
     display: flex;
@@ -109,10 +117,12 @@
 
   .about-name {
     padding-top: 0px;
+    font-size: 20px;
   }
   .text-descr {
     font-size: 10px;
     line-height: 2;
+    margin-bottom: 24px;
   }
 
   .about-tumb {
@@ -127,6 +137,7 @@
     font-size: 30px;
     margin-bottom: 30px;
     padding-bottom: 15px;
+    line-height: 1.23;
   }
   .about-item {
     font-size: 16px;
@@ -143,12 +154,11 @@
   .about-link {
     font-size: 18px;
     line-height: 1.55;
-    font-style: normal;
+    margin-top: 47px;
   }
 
   .about-tab {
-    justify-content: center;
-    align-self: star;
+    justify-content: start;
   }
   .about-tumb {
     width: 642px;
