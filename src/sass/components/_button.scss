@@ -1,6 +1,6 @@
-.mobileorder-button{
+.mobileorder-button {
     display: block;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -16,37 +16,94 @@
     margin-right: auto;
 }
 
-.button {
-    display: block;
+@mixin button($bcolor, $url, $x1, $y1, $bor, $col) {
+    background: $bcolor;
+    -webkit-mask: url($url);
+    mask: url($url);
+    -webkit-mask-size: $x1 $y1;
+    mask-size: $x1 $y1;
+    border: $bor;
+    color: $col;
+}
+
+.btn-wrapper {
+    position: relative;
+    width: 260px;
+    height: 48px;
     margin-left: auto;
     margin-right: auto;
-    padding: 15px 5px;
-
-    width: 260px;
+    overflow: hidden;
     border: 2px solid $accent-color;
-    text-align: center;
-    white-space: nowrap;
 
-    font-family: Montserrat;
+    transition: 0.5s;
+
+    @media screen and (min-width: 1366px) {
+        width: 354px;
+        height: 70px;
+    }
+}
+
+.button {
+    padding: 15px 5px;
+    width: 100%;
+    height: 100%;
+    font-family: "Montserrat";
     font-weight: 700;
     font-size: 12px;
+    white-space: nowrap;
+    text-transform: uppercase;
     line-height: 1.2;
     letter-spacing: 0.08em;
 
-    background-color: $accent-color;
-    text-transform: uppercase;
-    color: white;
+    @include button(
+        $accent-color,
+        "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+        3000%,
+        100%,
+        none,
+        #fff
+    );
     cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(29) forwards;
+    animation: ani2 0.7s steps(29) forwards;
+
+    &:hover {
+        -webkit-animation: ani 0.7s steps(29) forwards;
+        animation: ani 0.7s steps(29) forwards;
+    }
 
     @media screen and (min-width: 1366px) {
-        padding: 25px 0;
-        width: 354px;
+        padding: 25px 2px;
         font-size: 14px;
         letter-spacing: 0.08em;
     }
 }
 
-.botton-heder {
+.button-text-mask {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    font-weight: 700;
+    white-space: nowrap;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    color: $primary-white-color;
+    overflow: hidden;
+    @media screen and (min-width: 1366px) {
+        padding: 25px 2px;
+        font-size: 14px;
+        letter-spacing: 0.08em;
+    }
+}
+
+.color-hover-hero {
+    text-align: center;
+    color: $accent-color;
+}
+
+.button-heder {
     border: 2px solid $accent-color;
     font-style: 14px;
     background-color: transparent;
@@ -56,3 +113,128 @@
         width: 336px;
     }
 }
+
+@-webkit-keyframes ani {
+    from {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+
+    to {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+}
+
+@keyframes ani {
+    from {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+
+    to {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+}
+
+@-webkit-keyframes ani2 {
+    from {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+
+    to {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+}
+
+@keyframes ani2 {
+    from {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0;
+    }
+
+    to {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0;
+    }
+}
+
+a {
+    color: #00ff95;
+}
+
+// .button {
+//     display: block;
+//     margin-left: auto;
+//     margin-right: auto;
+//     padding: 15px 5px;
+
+//     width: 260px;
+//     border: 2px solid $accent-color;
+//     text-align: center;
+//     white-space: nowrap;
+
+//     font-family: Montserrat;
+//     font-weight: 700;
+//     font-size: 12px;
+//     line-height: 1.2;
+//     letter-spacing: 0.08em;
+
+//     background-color: $accent-color;
+//     text-transform: uppercase;
+//     overflow-x: hidden;
+//     color: white;
+//     cursor: pointer;
+
+//     @media screen and (min-width: 1366px) {
+//         padding: 25px 0;
+//         width: 354px;
+//         font-size: 14px;
+//         letter-spacing: 0.08em;
+//     }
+// }
+
+// .button-heder {
+//     border: 2px solid $accent-color;
+//     font-style: 14px;
+//     background-color: transparent;
+//     color: $accent-color;
+
+//     @media screen and (min-width: 1366px) {
+//         width: 336px;
+//     }
+// }
+
+// //experement//
+
+// .btn-hov {
+//     display: inline-block;
+//     position: relative;
+//     margin-left: auto;
+//     margin-right: auto;
+//     width: 354px;
+//     height: 70px;
+//     overflow: hidden;
+//     transition: 0.5s;
+// }
+
+// .button::before {
+//     content: "";
+//     position: absolute;
+//     height: 70px;
+//     width: 70px;
+//     top: 0px;
+//     left: -90px;
+//     opacity: 0;
+//     background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
+//     transform: skewX(-45deg);
+//     transition: 0.5s ease-in-out;
+// }
+// .button:hover::before {
+//     left: 400px;
+//     transition: 0.5s ease-in-out;
+//     opacity: 1;
+// }
