@@ -130,21 +130,21 @@
     height: 100%;
     padding-left: 28px;
     border: 1px solid $primary-white-color;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-weight: 600;
     font-style: normal;
     font-size: 14px;
     line-height: 1.2;
     background-color: transparent;
     color: $primary-white-color;
+    &:focus {
+        outline: none;
+    }
 
     @media screen and (min-width: 1366px) {
         font-size: 20px;
         padding-left: 40px;
     }
-    // &::placeholder {
-    //     color: red;
-    // }
 }
 
 .position-name {
