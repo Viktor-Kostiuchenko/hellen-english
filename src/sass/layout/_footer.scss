@@ -30,12 +30,12 @@
 }
 
 
-.desk-svghead{
+.logo-icon{
     margin-right: 10px;
 }
 
-.fotar-end{
-    padding: 22px;
+.copyright-wrapper{
+    padding: 22px 0;
     background-color: black;
 }
 
@@ -65,7 +65,7 @@
     margin: 0;
 
 }
-.desk-svghead{
+.logo-icon{
     margin-right: 15px;
 }
     
@@ -79,7 +79,7 @@
         display: flex;
         align-items: baseline;
         justify-content: space-between;
-        padding: 40px;
+        padding: 40px 0;
     }
     .footer-contact{
         margin: 0;
@@ -87,11 +87,9 @@
 
     }
 
-    .fotar-end{
-        padding: 40px;
-    }
 
-    .avtor{
+
+    .copyright{
     display: flex;
     align-items: center;}
 
@@ -107,7 +105,7 @@
 }
 
 .fotar-end{
-    padding: 40px 182px;
+    padding: 40px 0;
 }
 
 .footer-contact{
@@ -115,7 +113,7 @@
 }
 .contact{
 justify-content: unset;
-padding: 52px 182px;
+padding: 52px 0;
 
 }
         

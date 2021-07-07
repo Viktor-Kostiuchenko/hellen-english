@@ -10,12 +10,12 @@
 display: none;
 }
 
-.headernav-title{
+.header-nav-list{
     display: flex;
     margin-left: 114px;
 }
 
-.headernav-title{
+.header-nav-list{
     display: none;
 }
 
@@ -34,7 +34,7 @@ display: none;
     border: none;
 }
 
-.desklogo{
+.logo{
 font-family: Montserrat;
 font-style: normal;
 font-weight: 800;
@@ -45,7 +45,12 @@ color: $primary-black-color;
 
 }
 
-.head-footer{
+.iconhead{
+    width: 30px;
+    height: 30px;
+}
+
+.logo-text{
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -54,10 +59,11 @@ color: $primary-black-color;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: $accent-color;
+    text-align: left;
 
 }
 
-.headernav-down{
+.logo-text-accent{
     color: $primary-black-color;
 }
 
@@ -85,13 +91,13 @@ color: $primary-black-color;
 
 // Modalmenu
 .mobile-logo{
-    @extend .desklogo;
+    @extend .logo;
     color: white;
     margin-bottom: 50px;
 }
 
 
-.mobile-headermenu{
+.mobile-menu{
     display: flex;
     flex-direction: column;
     padding: 38px 30px;
@@ -148,6 +154,8 @@ color: $primary-black-color;
 // =================================================
 
 @media screen and (min-width:768px) {
+
+
 .order-button{
         display: block;
         }
@@ -174,7 +182,7 @@ color: $primary-black-color;
     cursor: pointer;
     color: $accent-color;
     border: 2px solid $accent-color;
-    padding: 27px 24px;
+    padding: 15px 5px;
     margin-left: auto;
     margin-right: 40px;
     }
@@ -183,7 +191,12 @@ color: $primary-black-color;
 
 @media screen and (min-width:1366px) {
 
-    .mobile-headermenu.is-open{
+    .mobile-header{
+        display: none;
+
+    }
+
+    .mobile-menu-container.is-open{
         display: none;
     }
    
@@ -192,7 +205,7 @@ color: $primary-black-color;
     }
 
     
-      .head-main.headermenu-current{
+      .header-nav-link.current{
         color: $accent-color;
     
       }
@@ -202,21 +215,21 @@ color: $primary-black-color;
 
 
     
-    .headernav-title{
+    .header-nav-list{
         display: flex;
         margin-left: 114px;
     }
-    .head-link:not(:last-child){
+    .header-nav-item:not(:last-child){
         margin-right: 40px;
     }
     
-    .headernav{
+    .header-nav{
         display: flex;
         align-items: center;
     }
 
             
-    .head-main{
+    .header-nav-link{
     text-decoration: none;
     font-family: Montserrat;
     font-style: normal;
@@ -230,12 +243,14 @@ color: $primary-black-color;
     color: $primary-text-color;
     }
 
-    .head-main:hover,
-    .head-main:focus{
+    .header-nav-link:hover,
+    .header-nav-link:focus{
         color: $accent-color;
     }
 
-    
-    
+    .order-button{
+        padding: 27px 23px;
+    }
+
 }
 
