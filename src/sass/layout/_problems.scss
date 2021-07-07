@@ -96,16 +96,12 @@
     background-image: url('../images/icons/campfire.svg'),
       linear-gradient(to bottom, $primary-black-color 80%, $primary-white-color 80%);
     background-repeat: no-repeat, no-repeat;
-    // background-position: right -46px top 94px, 0px 0px;
-    background-position: 1273px 94px, 0px 0px;
+    background-position: right -46px top 94px, 0px 0px;
+    // background-position: 1273px 94px, 0px 0px;
   }
 
   .problems-container {
     padding-top: 100px;
-
-    // background-image: url('../images/icons/campfire.svg');
-    // background-repeat: no-repeat;
-    // background-position: 1273px 94px;
   }
 
   .problems-title {
