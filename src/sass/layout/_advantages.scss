@@ -23,6 +23,9 @@
 
   color: $primary-black-color;
 
+  opacity: 0;
+  transition: opacity 1000ms ease 0ms;
+
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 26px;
@@ -41,6 +44,11 @@
     width: calc(100% / 3);
   }
 }
+
+.advantage-list._active .advantage-item {
+  opacity: 1;
+}
+
 
 .advantage-item {
   &::before {
@@ -63,6 +71,7 @@
       height: 102px;
     }
   }
+
 }
 
 .advantage-item:nth-child(2) {
@@ -105,5 +114,7 @@
     height: 102px;
   }
 }
+
+
 
 
