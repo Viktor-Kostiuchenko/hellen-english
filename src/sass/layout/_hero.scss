@@ -1,31 +1,24 @@
 .hero {
    padding: 22px 0 47px;
    background-repeat: no-repeat;
-   background-position: center bottom -25px;
+   background-position: left -64px bottom -25px;
+   background-size: cover;
 
-   background-image: url(../images/content/mobile/hero-bg-mob.png);
+   background-image: url(../images/content/tablet/hero-bg-tab.png);
 
    @media (min-device-pixel-ratio: 2),
    (min-resolution: 192dpi),
    (min-resolution: 2dppx) {
-   background-image: url(../images/content/mobile/hero-bg-mob@2x.png);
+   background-image: url(../images/content/tablet/hero-bg-tab@2x.png);
  }
 
    @media screen and (min-width: 768px) {
      padding: 44px 0 64px;
-   background-position: center bottom;
-   
-     background-image: url(../images/content/tablet/hero-bg-tab.png);
-
-     @media (min-device-pixel-ratio: 2),
-     (min-resolution: 192dpi),
-     (min-resolution: 2dppx) {
-     background-image: url(../images/content/tablet/hero-bg-tab@2x.png);
-   }
+     background-position: center bottom;
    }
  
    @media screen and (min-width: 1366px) {
-     padding: 16px 0 10px;
+     padding: 11px 0 10px;
      background-image: url(../images/content/desktop/hero-bg-desk.png);
 
      @media (min-device-pixel-ratio: 2),
