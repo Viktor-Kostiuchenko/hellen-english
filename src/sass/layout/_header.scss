@@ -114,6 +114,10 @@ display: none;
 
   }
 
+  .mobileorder-button{
+    padding: 14px;
+}
+
 
 // =================================================
 
@@ -122,9 +126,16 @@ display: none;
 
 .order-button{
         display: block;
+        padding: 15px 5px;
         }
 
+.order-button{
+            padding: 15px 5px;
+        }
 
+        .mobileorder-button{
+            display: none;
+        }
 
 .header-container{
     justify-content: space-between;
@@ -148,9 +159,6 @@ display: none;
         display: none;
     }
    
-    .mobile-button{
-        display: none;
-    }
 
     
       .header-nav-link.current{
@@ -160,8 +168,6 @@ display: none;
       .order-button{
           margin-right: auto;
       }
-
-
     
     .header-nav-list{
         display: flex;
@@ -198,6 +204,10 @@ display: none;
 
     .order-button{
         padding: 27px 23px;
+    }
+
+    .iconhead{
+        display: none;
     }
 
 }

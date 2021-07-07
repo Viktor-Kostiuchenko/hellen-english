@@ -1,5 +1,7 @@
 .contact{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     padding: 30px 0;
 
 }
@@ -76,6 +78,7 @@
         display: flex;
         align-items: baseline;
         justify-content: space-between;
+        flex-direction: unset;
         padding: 40px 0;
     }
     .footer-contact{
