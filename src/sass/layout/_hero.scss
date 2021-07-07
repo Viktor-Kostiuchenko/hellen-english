@@ -5,36 +5,30 @@
 
    background-image: url(../images/content/mobile/hero-bg-mob.png);
 
-   @media (min-device-pixel-ratio: 2),
-   (min-resolution: 192dpi),
-   (min-resolution: 2dppx) {
-   background-image: url(../images/content/mobile/hero-bg-mob@2x.png);
- }
+   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/content/mobile/hero-bg-mob@2x.png);
+   }
 
    @media screen and (min-width: 768px) {
-     padding: 44px 0 64px;
-   background-position: center bottom;
-   
-     background-image: url(../images/content/tablet/hero-bg-tab.png);
+      padding: 44px 0 64px;
+      background-position: center bottom;
 
-     @media (min-device-pixel-ratio: 2),
-     (min-resolution: 192dpi),
-     (min-resolution: 2dppx) {
-     background-image: url(../images/content/tablet/hero-bg-tab@2x.png);
+      background-image: url(../images/content/tablet/hero-bg-tab.png);
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+         background-image: url(../images/content/tablet/hero-bg-tab@2x.png);
+      }
    }
-   }
- 
+
    @media screen and (min-width: 1366px) {
-     padding: 16px 0 10px;
-     background-image: url(../images/content/desktop/hero-bg-desk.png);
+      padding: 16px 0 10px;
+      background-image: url(../images/content/desktop/hero-bg-desk.png);
 
-     @media (min-device-pixel-ratio: 2),
-     (min-resolution: 192dpi),
-     (min-resolution: 2dppx) {
-     background-image: url(../images/content/desktop/hero-bg-desc@2x.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+         background-image: url(../images/content/desktop/hero-bg-desc@2x.png);
+      }
    }
-   }
- }
+}
 
 .hero-container {
    @media screen and (min-width: 768px) {
@@ -44,14 +38,13 @@
       align-items: center;
 
       padding-bottom: 137px;
-    }
+   }
 
-    @media screen and (min-width: 1366px) {
-
+   @media screen and (min-width: 1366px) {
       padding-top: 54px;
       padding-bottom: 250px;
-    }
-} 
+   }
+}
 
 .hero-content {
    margin-left: auto;
@@ -61,8 +54,7 @@
       width: 280px;
       margin-bottom: 30px;
    }
-   
-   
+
    @media screen and (min-width: 768px) {
       width: 332px;
       margin-left: 0;
@@ -72,20 +64,18 @@
       width: 520px;
    }
 
-.hero-text-block {
-   margin-bottom: 52px; 
+   .hero-text-block {
+      margin-bottom: 52px;
 
-   transform: translate(0px, 120%);
-   opacity: 0;
-   transition: all 1000ms ease 0ms;
+      transform: translate(0px, 120%);
+      opacity: 0;
+      transition: all 1000ms ease 0ms;
+   }
 
-}
-
-.hero-text-block._active {
-   transform: translate(0px, 0px);
-   opacity: 1;
-}
-   
+   .hero-text-block._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+   }
 }
 .hero-title {
    margin-bottom: 8px;
@@ -106,12 +96,10 @@
    }
 }
 
-
 .hero-text {
    font-size: 14px;
    line-height: 1.57;
    color: $primary-text-color;
-
 
    @media screen and (min-width: 1366px) {
       font-size: 20px;
@@ -121,13 +109,12 @@
 
 .hero-guarantee {
    display: block;
-   margin-bottom: 52px; 
+   margin-bottom: 52px;
 
    color: $primary-black-color;
-   font-weight: 700; 
+   font-weight: 700;
    font-size: 14px;
    line-height: 1.57;
-
 
    @media screen and (min-width: 1366px) {
       font-size: 20px;
@@ -144,7 +131,6 @@
    align-items: center;
    justify-content: center;
 
-
    opacity: 0;
    transition: opacity 700ms ease 0ms;
 
@@ -153,12 +139,18 @@
    }
 }
 
+.hero-button:hover {
+   .button-text-mask {
+      color: $accent-color;
+   }
+}
+
 .hero-button._active {
    opacity: 1;
    transition: opacity 1000ms ease 400ms;
 }
 
-.hero-background{
+.hero-background {
    transform: scale(0);
    transition: transform 1000ms ease 0ms;
 }
@@ -166,9 +158,8 @@
 .hero-wrapper._active .hero-background {
    transform: scale(1);
 }
-    
+
 .hero-background {
-    
    @media screen and (max-width: 767px) {
       width: 208px;
       margin: 0 auto;
@@ -185,5 +176,3 @@
       width: 842px;
    }
 }
-
-
