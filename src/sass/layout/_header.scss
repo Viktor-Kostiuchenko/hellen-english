@@ -2,9 +2,6 @@
     padding: 40px 0;
 }
 
-.hero{
-    list-style: none;
-}
 
 .order-button{
 display: none;
@@ -20,7 +17,7 @@ display: none;
 }
 
 
-.header-wrappe{
+.header-container{
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -34,38 +31,11 @@ display: none;
     border: none;
 }
 
-.logo{
-font-family: Montserrat;
-font-style: normal;
-font-weight: 800;
-font-size: 26px;
-line-height: 1.23;
-letter-spacing: 0.04em;
-color: $primary-black-color;
-text-align: left;
-
-}
-
 .iconhead{
     width: 30px;
     height: 30px;
 }
 
-.logo-text{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 8px;
-    line-height: 0.8;    
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: $accent-color;
-
-}
-
-.logo-text-accent{
-    color: $primary-black-color;
-}
 
 .mobile-header.is-open{
     opacity: 1;
@@ -90,12 +60,6 @@ text-align: left;
 }
 
 // Modalmenu
-.mobile-logo{
-    @extend .logo;
-    color: white;
-    margin-bottom: 50px;
-}
-
 
 .mobile-menu{
     display: flex;
@@ -138,7 +102,7 @@ text-align: left;
     color: $primary-white-color;
 }
 
-.mobilehero{
+.mobile-list{
     margin-bottom: 50px;
     text-align: left;
     align-self: center;
@@ -162,7 +126,7 @@ text-align: left;
 
 
 
-.header-wrappe{
+.header-container{
     justify-content: space-between;
     display: flex;
     align-items: center;
