@@ -1,11 +1,10 @@
-.header-wrappe {
+.header-container {
   justify-content: space-between;
   display: flex;
   align-items: baseline;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
 .header-nav-list,
 .header-order-button {
   display: none;
@@ -28,16 +27,10 @@
     display: flex;
   }
   .header-order-button {
-    font-weight: bold;
     font-size: 14px;
-    line-height: 1.21;
     letter-spacing: 0.14em;
-    text-transform: uppercase;
     background-color: $primary-white-color;
-    cursor: pointer;
     color: $accent-color;
-    border: 2px solid $accent-color;
-    padding: 15px 5px;
     transition: $modal-time $modal-form;
     &:focus,
     &:hover {
@@ -139,12 +132,14 @@
     fill: $accent-color;
   }
 }
-
 .mobile-list {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
   margin-bottom: 50px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 .mobile-link {
   font-weight: 800;
@@ -160,18 +155,10 @@
   }
 }
 .mobile-order-button {
-  font-weight: bold;
   font-size: 14px;
-  line-height: 1.21;
   letter-spacing: 0.14em;
-  text-transform: uppercase;
   background-color: transparent;
-  cursor: pointer;
   color: $accent-color;
-  border: 2px solid $accent-color;
-  padding: 15px 5px;
-  margin-left: auto;
-  margin-right: auto;
   &:focus,
   &:hover {
     color: #fcf0e8;
@@ -182,5 +169,12 @@
 @media screen and (min-width: 768px) {
   .mobile-order-button {
     display: none;
+  }
+  .mobile-link {
+    font-size: 26px;
+  }
+  .mobile-list {
+    margin-top: 72px;
+    margin-bottom: 0px;
   }
 }
