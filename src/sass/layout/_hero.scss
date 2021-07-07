@@ -1,0 +1,194 @@
+.hero {
+   padding: 22px 0 47px;
+   background-repeat: no-repeat;
+   background-position: center bottom -47px;
+
+   background-image: url(../images/content/mobile/hero-bg-mob.png);
+
+   @media (min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+   background-image: url(../images/content/mobile/hero-bg-mob@2x.png);
+ }
+
+   @media screen and (min-width: 768px) {
+     padding: 44px 0 64px;
+   background-position: center bottom;
+   
+     background-image: url(../images/content/tablet/hero-bg-tab.png);
+
+     @media (min-device-pixel-ratio: 2),
+     (min-resolution: 192dpi),
+     (min-resolution: 2dppx) {
+     background-image: url(../images/content/tablet/hero-bg-tab@2x.png);
+   }
+   }
+ 
+   @media screen and (min-width: 1366px) {
+     padding: 16px 0 10px;
+     background-image: url(../images/content/desktop/hero-bg-desk.png);
+
+     @media (min-device-pixel-ratio: 2),
+     (min-resolution: 192dpi),
+     (min-resolution: 2dppx) {
+     background-image: url(../images/content/desktop/hero-bg-desc@2x.png);
+   }
+   }
+ }
+
+.hero-container {
+   
+   @media screen and (min-width: 768px) {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding-bottom: 137px;
+    }
+
+    @media screen and (min-width: 1366px) {
+
+      padding-top: 54px;
+      padding-bottom: 250px;
+    }
+} 
+
+.hero-content {
+   margin-left: auto;
+   margin-right: auto;
+
+   @media screen and (max-width: 767px) {
+      width: 280px;
+      margin-bottom: 30px;
+   }
+   
+   
+   @media screen and (min-width: 768px) {
+      width: 332px;
+      margin-left: 0;
+   }
+
+   @media screen and (min-width: 1366px) {
+      width: 520px;
+   }
+
+   
+}
+.hero-title {
+   margin-bottom: 8px;
+
+   color: $primary-black-color;
+
+   font-weight: 800;
+   font-size: 20px;
+   line-height: 1.3;
+   letter-spacing: 0.03em;
+
+   @media screen and (min-width: 768px) {
+      font-size: 26px;
+   }
+
+   @media screen and (min-width: 1366px) {
+      font-size: 58px;
+   }
+}
+
+.hero-text {
+   font-size: 14px;
+   line-height: 1.57;
+   color: $primary-text-color;
+
+
+   @media screen and (min-width: 1366px) {
+      font-size: 20px;
+      line-height: 1.64;
+   }
+}
+
+.hero-guarantee {
+   display: block;
+   margin-bottom: 52px; 
+
+   color: $primary-black-color;
+   font-weight: 700; 
+   font-size: 14px;
+   line-height: 1.57;
+
+
+   @media screen and (min-width: 1366px) {
+      font-size: 20px;
+      line-height: 1.64;
+   }
+}
+
+.hero-guarantee-accent {
+   color: $accent-color;
+}
+
+.hero-button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   @media screen and (min-width: 768px) {
+      margin-left: 0;
+   }
+
+}
+
+.hero-background{
+   @keyframes fade-in {
+      0% {
+         opacity: 0;
+      }
+
+      100% {
+         opacity: 1;
+      }
+
+      // 0% {
+      //   transform: scale(1);
+      // }
+    
+      // 14% {
+      //   transform: scale(1.15);
+      // }
+    
+      // 28% {
+      //   transform: scale(1);
+      // }
+    
+      // 42% {
+      //   transform: scale(1.15);
+      // }
+    
+      // 70% {
+      //   transform: scale(1);
+      // }
+    }
+}
+    
+.hero-background {
+      animation-name: fade-in;
+      animation-duration: 1000ms;
+      animation-timing-function: ease-in-out;
+    
+   @media screen and (max-width: 767px) {
+      width: 208px;
+      margin: 0 auto;
+   }
+
+   @media screen and (min-width: 768px) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 376px;
+   }
+
+   @media screen and (min-width: 1366px) {
+      width: 842px;
+   }
+}
+
+
