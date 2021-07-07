@@ -32,14 +32,9 @@
     </div>
   </div>
 
-  <div class="mobile-header" data-menu>
-    <button type="button" class="close-button" data-menu-close>
-      <svg class="close-icon" width="15" height="15">
-        <use href="../src/images/icons/sprite.svg#icon-close"></use>
-      </svg>
-    </button>
-    <div class="mobile-menu container">
-      <a class="header-logo">
+  <div class="mobile-header container" data-menu>
+    <div class="mobile-menu header-wrappe">
+      <a class="header-logo mobile-logo">
         <span class="header-logo-text">
           Hell
           <svg class="header-logo-icon">
@@ -49,7 +44,14 @@
         </span>
         <span class="logo-text-accent"> HELLISH </span> ENGLISH
       </a>
-      <ul class="mobilehero list">
+      <button type="button" class="mobile-close-button" data-menu-close>
+        <svg class="mobile-close-icon" width="15" height="15">
+          <use href="../src/images/icons/sprite.svg#icon-close-modal"></use>
+        </svg>
+      </button>
+    </div>
+    <div>
+      <ul class="mobile-list list">
         <li class="mobile-item">
           <a class="mobile-link mobilemenu-current" href="#">Studying program</a>
         </li>
@@ -57,7 +59,7 @@
         <li class="mobile-item"><a class="mobile-link" href="#">Training options</a></li>
         <li class="mobile-item"><a class="mobile-link" href="#">Contacts</a></li>
       </ul>
-      <button type="button" class="mobileorder-button" data-modal-open>
+      <button type="button" class="mobile-order-button" data-modal-open>
         CONSULTATION BY PHONE
       </button>
     </div>
