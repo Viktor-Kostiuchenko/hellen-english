@@ -49,7 +49,7 @@
   color: $accent-color;
   font-size: 12px;
   line-height: 1.67;
-  font-style: normal;
+  margin-top: 10px;
 }
 
 .about-picture {
@@ -124,7 +124,9 @@
     line-height: 2;
     margin-bottom: 24px;
   }
-
+  .about-link {
+    margin-top: 24px;
+  }
   .about-tumb {
     width: 402px;
   }
