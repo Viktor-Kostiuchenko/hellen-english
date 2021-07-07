@@ -1,0 +1,46 @@
+.logo {
+  color: $primary-black-color;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 5px;
+  line-height: 1.2;
+  letter-spacing: 0.18em;
+}
+.logo-text {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  text-transform: none;
+  margin-bottom: 4px;
+}
+.logo-icon {
+  margin-left: 4px;
+  margin-right: 4px;
+  width: 14px;
+  height: 19px;
+}
+.logo-text-accent {
+  color: $accent-color;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    color: $primary-black-color;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 1.25;
+    letter-spacing: 0.18em;
+  }
+  .logo-icon {
+    width: 22px;
+    height: 30px;
+  }
+  .logo-text {
+    font-size: 26px;
+    line-height: 1.23;
+  }
+}
