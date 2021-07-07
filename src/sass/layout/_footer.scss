@@ -1,0 +1,120 @@
+.contact{
+    text-align: center;
+    padding: 30px 0;
+
+}
+.footer-contact{
+    display:flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.desk-footerlogo{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.23;
+    letter-spacing: 0.04em;
+    color: $primary-black-color;
+}
+
+.contact-number{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.08em;
+    color:$primary-black-color ;
+    margin-right: 15px;
+}
+
+
+.logo-icon{
+    margin-right: 10px;
+}
+
+.copyright-wrapper{
+    padding: 22px 0;
+    background-color: black;
+}
+
+.instagram{
+    height: 100%;
+    margin-top: 31px;
+
+}
+
+.avtor{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2;
+    display: block;
+    text-align: center;
+    color: #B9B9B9;
+}
+
+@media screen and (min-width:768px){
+
+
+.instagram{
+    padding-left: 24px;
+    border-left: 1px solid #B9B9B9;
+    margin: 0;
+
+}
+.logo-icon{
+    margin-right: 15px;
+}
+    
+.contact-number{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.08em;}
+
+    .contact{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 40px 0;
+    }
+    .footer-contact{
+        margin: 0;
+        flex-direction: unset;
+
+    }
+
+
+
+    .copyright{
+    display: flex;
+    align-items: center;}
+
+    
+}
+
+
+@media screen and (min-width:1366px){
+    
+    .contact-number{
+        font-size: 30px;
+        line-height: 1.23;
+}
+
+.fotar-end{
+    padding: 40px 0;
+}
+
+.footer-contact{
+    margin-left: 225px;
+}
+.contact{
+justify-content: unset;
+padding: 52px 0;
+
+}
+        
+    }
