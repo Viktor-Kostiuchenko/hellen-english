@@ -75,6 +75,7 @@
       opacity: 1;
    }
 }
+
 .hero-title {
    margin-bottom: 8px;
 
@@ -124,17 +125,19 @@
    color: $accent-color;
 }
 
+.hero-content .btn-wrapper {
+   @media screen and (min-width: 768px) {
+      margin-left: 0;
+   }
+}
+
 .hero-button {
    display: flex;
    align-items: center;
    justify-content: center;
 
    opacity: 0;
-   transition: opacity 700ms ease 0ms;
-
-   @media screen and (min-width: 768px) {
-      margin-left: 0;
-   }
+   transition: opacity 1000ms ease 0ms;
 }
 
 .hero-button:hover {
@@ -145,7 +148,6 @@
 
 .hero-button._active {
    opacity: 1;
-   transition: opacity 1000ms ease 400ms;
 }
 
 .hero-background {
