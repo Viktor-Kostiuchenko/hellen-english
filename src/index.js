@@ -69,35 +69,40 @@ if (animItems.length >0) {
 
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
+    openMobileModalBtn: document.querySelector('[burger]'),
+     closeMobileModalBtn: document.querySelector('[burger]'),
+        openModalBtn: document.querySelector('[data-modal-open]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
-    mod: document.getElementsByTagName('body')[0], 
+    openBackdropModalBtn: document.querySelector('[data-modal-open-2]'),
+    modalMobile: document.querySelector('[data-menu]'),
+     modal: document.querySelector('[data-modal]'),
+    mod: document.getElementsByTagName('body')[0],
+    burger: document.querySelector('[burger]'),
+    logo: document.querySelector('[mobile-logo]'),
   };
-
-  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.openMobileModalBtn.addEventListener('click', toggleModalMobile);
+  refs.closeMobileModalBtn.addEventListener('click', toggleModalMobile);
+   refs.openBackdropModalBtn.addEventListener('click', modal);
+   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
-  function toggleModal() {
+  function toggleModalMobile() {
+    refs.modalMobile.classList.toggle('is-open');
+    refs.mod.classList.toggle('no-scrol');
+    refs.burger.classList.toggle('burger-active');
+    refs.logo.classList.toggle('mobile-menu-logo');
+  }
+  function modal() {
+    refs.modalMobile.classList.toggle('is-open');
+    refs.burger.classList.toggle('burger-active');
+    refs.logo.classList.toggle('mobile-menu-logo');
+    refs.modal.classList.toggle('is-hidden');
+   }
+     function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
    refs.mod.classList.toggle('no-scrol');
-
   }
-})();
 
-(() => {
-  const menuBtnRef = document.querySelector("[data-menu-button]");
-  const mobileMenuRef = document.querySelector("[data-menu]");
-  const mobileBtnClose = document.querySelector("[data-menu-close]");
-
-  menuBtnRef.addEventListener("click", () => {
-    mobileMenuRef.classList.toggle("is-open");
-  });
-
-  mobileBtnClose.addEventListener("click", () => {
-    mobileMenuRef.classList.toggle("is-open");
-  });
-})();
 
 const anchors = document.querySelectorAll('a[href*="#"]')
 
@@ -111,3 +116,6 @@ for (let anchor of anchors) {
       })
    })
 }
+
+})();
+
