@@ -186,10 +186,8 @@
 .about-tumb {
   transform: scale(0);
   transition: transform 1000ms ease 0ms;
-
 }
 
 .about-tumb._active {
   transform: scale(1);
 }
-
