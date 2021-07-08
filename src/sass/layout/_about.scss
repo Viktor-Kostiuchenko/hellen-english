@@ -1,6 +1,7 @@
 .about {
   padding-top: 40px;
 }
+
 .about-list {
   position: relative;
   margin-bottom: 10px;
@@ -29,14 +30,16 @@
   line-height: 1.67;
   text-align: left;
 }
+
 .about-title {
   color: $primary-black-color;
   margin-bottom: 20px;
 }
+
 .about-name {
   display: flex;
   align-items: center;
-
+  letter-spacing: 0.08em;
   line-height: 1.2;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -50,6 +53,7 @@
   font-size: 12px;
   line-height: 1.67;
   margin-top: 10px;
+  letter-spacing: 0.03em;
 }
 
 .about-picture {
@@ -78,6 +82,7 @@
     background-repeat: no-repeat;
   }
 }
+
 .about-check {
   margin-right: 10px;
 }
@@ -139,10 +144,21 @@
     padding-bottom: 15px;
     line-height: 1.23;
   }
+  .about-list {
+    padding-left: 60px;
+  }
   .about-item {
     font-size: 16px;
     line-height: 1.55;
+
+    &::before {
+      width: 25px;
+      height: 20px;
+      top: 1px;
+      left: -60px;
+    }
   }
+
   .text-descr {
     font-size: 18px;
     line-height: 1.55;
