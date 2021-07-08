@@ -1,7 +1,7 @@
 <header class="header">
   <div class="header-container container">
     <nav class="header-nav">
-      <a class="logo">
+      <a class="logo" mobile-logo>
         <span class="logo-text">
           Hell
           <svg class="logo-icon">
@@ -24,33 +24,15 @@
       <button type="button" class="header-order-button button" data-modal-open>
         consultation by phone
       </button>
-      <button type="button" class="header-mobile-button" data-menu-button>
-        <svg class="header-burger-icon">
-          <use href="../src/images/icons/sprite.svg#header-burger"></use>
-        </svg>
+      <button class="hamburger hamburger--emphatic" type="button" burger>
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
       </button>
     </div>
   </div>
-
   <div class="mobile-header container" data-menu>
-    <div class="mobile-menu header-container">
-      <a class="logo mobile-logo">
-        <span class="logo-text">
-          Hell
-          <svg class="logo-icon">
-            <use href="../src/images/icons/sprite.svg#icon-fire"></use>
-          </svg>
-          EN
-        </span>
-        <span class="logo-text-accent"> HELLISH </span> ENGLISH
-      </a>
-      <button type="button" class="mobile-close-button" data-menu-close>
-        <svg class="mobile-close-icon" width="15" height="15">
-          <use href="../src/images/icons/sprite.svg#icon-close-modal"></use>
-        </svg>
-      </button>
-    </div>
-    <div>
+    <div class="mobile-header-container">
       <ul class="mobile-list list">
         <li class="mobile-item">
           <a class="mobile-link mobilemenu-current" href="#">Studying program</a>
@@ -59,7 +41,7 @@
         <li class="mobile-item"><a class="mobile-link" href="#">Training options</a></li>
         <li class="mobile-item"><a class="mobile-link" href="#">Contacts</a></li>
       </ul>
-      <button type="button" class="mobile-order-button button" data-modal-open>
+      <button type="button" class="mobile-order-button button" data-modal-open-2>
         CONSULTATION BY PHONE
       </button>
     </div>
