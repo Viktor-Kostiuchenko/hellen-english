@@ -70,7 +70,10 @@ if (animItems.length >0) {
 (() => {
   const refs = {
     openMobileModalBtn: document.querySelector('[burger]'),
-     closeMobileModalBtn: document.querySelector('[burger]'),
+     closeBurger1Btn: document.querySelector('[burger-1]'),
+     closeBurger2Btn: document.querySelector('[burger-2]'),
+     closeBurger3Btn: document.querySelector('[burger-3]'),
+     closeBurger4Btn: document.querySelector('[burger-4]'),
         openModalBtn: document.querySelector('[data-modal-open]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
     openBackdropModalBtn: document.querySelector('[data-modal-open-2]'),
@@ -81,7 +84,10 @@ if (animItems.length >0) {
     logo: document.querySelector('[mobile-logo]'),
   };
   refs.openMobileModalBtn.addEventListener('click', toggleModalMobile);
-  refs.closeMobileModalBtn.addEventListener('click', toggleModalMobile);
+  refs.closeBurger1Btn.addEventListener('click', toggleModalMobile);
+  refs.closeBurger2Btn.addEventListener('click', toggleModalMobile);
+  refs.closeBurger3Btn.addEventListener('click', toggleModalMobile);
+  refs.closeBurger4Btn.addEventListener('click', toggleModalMobile);
    refs.openBackdropModalBtn.addEventListener('click', modal);
    refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);

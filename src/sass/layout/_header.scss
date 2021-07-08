@@ -112,7 +112,6 @@
 .mobile-list {
   display: flex;
   flex-direction: column;
-  // margin-top: 50px;
   margin-bottom: 50px;
   width: fit-content;
   margin-left: auto;
@@ -131,7 +130,6 @@
     color: $accent-color;
   }
 }
-
 .mobile-header-container {
   position: relative;
   transform: translateX(-50%);
@@ -153,7 +151,6 @@
     font-size: 26px;
   }
 }
-
 //----------BURGER ANIMATION----------------------------
 .hamburger {
   z-index: 11;
@@ -184,30 +181,25 @@
     display: none;
   }
 }
-
 .hamburger.burger-active:hover {
   opacity: 0.7;
 }
-
 .hamburger.burger-active .hamburger-inner,
 .hamburger.burger-active .hamburger-inner::before,
 .hamburger.burger-active .hamburger-inner::after {
   background-color: #fff;
 }
-
 .hamburger-box {
   width: 40px;
   height: 24px;
   display: inline-block;
   position: relative;
 }
-
 .hamburger-inner {
   display: block;
   top: 50%;
   margin-top: -2px;
 }
-
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
@@ -225,40 +217,35 @@
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
 }
-
 .hamburger-inner::before,
 .hamburger-inner::after {
-  content: "";
+  content: '';
   display: block;
 }
-
 .hamburger-inner::before {
   top: -10px;
 }
-
 .hamburger-inner::after {
   bottom: -10px;
 }
 .hamburger--emphatic {
   overflow: hidden;
 }
-
 .hamburger--emphatic .hamburger-inner {
   -webkit-transition: background-color 0.125s 0.175s ease-in;
   transition: background-color 0.125s 0.175s ease-in;
 }
-
 .hamburger--emphatic .hamburger-inner::before {
   left: 0;
   -webkit-transition: top 0.05s 0.125s linear, left 0.125s 0.175s ease-in,
     -webkit-transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335);
   transition: top 0.05s 0.125s linear, left 0.125s 0.175s ease-in,
     -webkit-transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335);
-  transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in;
-  transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in,
-    -webkit-transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear,
+    left 0.125s 0.175s ease-in;
+  transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear,
+    left 0.125s 0.175s ease-in, -webkit-transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335);
 }
-
 .hamburger--emphatic .hamburger-inner::after {
   top: 10px;
   right: 0;
@@ -271,7 +258,6 @@
   transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear,
     right 0.125s 0.175s ease-in, -webkit-transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335);
 }
-
 .hamburger--emphatic.burger-active .hamburger-inner {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
@@ -279,7 +265,6 @@
   transition-timing-function: ease-out;
   background-color: transparent !important;
 }
-
 .hamburger--emphatic.burger-active .hamburger-inner::before {
   left: -80px;
   top: -80px;
@@ -289,11 +274,12 @@
     -webkit-transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: left 0.125s ease-out, top 0.05s 0.125s linear,
     -webkit-transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: left 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: left 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1),
+  transition: left 0.125s ease-out, top 0.05s 0.125s linear,
+    transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: left 0.125s ease-out, top 0.05s 0.125s linear,
+    transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1),
     -webkit-transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
 .hamburger--emphatic.burger-active .hamburger-inner::after {
   right: -80px;
   top: -80px;
