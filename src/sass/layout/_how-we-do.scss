@@ -13,8 +13,10 @@
   text-align: center;
 
   transform: translate(-100%, 0px);
-  transition: transform 1000ms ease 0ms;
   opacity: 0;
+  transition: transform 1000ms ease 0ms,
+  opacity 1000ms ease 0ms;
+  
 }
 
 .how-we-do-list._active {
