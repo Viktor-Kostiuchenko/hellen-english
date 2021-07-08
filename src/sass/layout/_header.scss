@@ -28,22 +28,15 @@
     background-color: $primary-white-color;
     color: $accent-color;
     transition: $modal-time $modal-form;
-    /*     &:focus,
+    &:focus,
     &:hover {
       color: #fff;
       background-color: $accent-color;
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    } */
+    }
   }
   .header-mobile-button {
     margin-left: 40px;
-  }
-  .wrapper-heder-btn {
-    position: relative;
-    width: 260px;
-    height: 48px;
-    border: 2px solid $accent-color;
-    box-sizing: border-box;
   }
 }
 //--------------desktop---------------------
@@ -51,9 +44,9 @@
   .header-mobile-button {
     display: none;
   }
-  .header-order-button {
-    min-width: 332px;
-    min-height: 66px;
+  .button-heder-menu {
+    min-width: 336px;
+    min-height: 70px;
   }
   .header-nav-list {
     display: flex;
@@ -85,10 +78,6 @@
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       color: $accent-color;
     }
-  }
-  .wrapper-heder-btn {
-    width: 336px;
-    height: 70px;
   }
 }
 //-----------mobile menu----------------
@@ -142,18 +131,7 @@
     color: $accent-color;
   }
 }
-.mobile-order-button {
-  // font-size: 14px;
-  // letter-spacing: 0.14em;
-  background-color: transparent;
-  color: $accent-color;
-  //   &:focus,
-  //   &:hover {
-  //     color: #fcf0e8;
-  //     background-color: #ff6b0936;
-  //     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  //   }
-}
+
 .mobile-header-container {
   position: relative;
   transform: translateX(-50%);
@@ -168,7 +146,7 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .btn-wrapper-mob-menu {
+  .button-mob-menu {
     display: none;
   }
   .mobile-link {
@@ -250,7 +228,7 @@
 
 .hamburger-inner::before,
 .hamburger-inner::after {
-  content: '';
+  content: "";
   display: block;
 }
 
@@ -276,10 +254,9 @@
     -webkit-transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335);
   transition: top 0.05s 0.125s linear, left 0.125s 0.175s ease-in,
     -webkit-transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335);
-  transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear,
-    left 0.125s 0.175s ease-in;
-  transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear,
-    left 0.125s 0.175s ease-in, -webkit-transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in;
+  transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in,
+    -webkit-transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335);
 }
 
 .hamburger--emphatic .hamburger-inner::after {
@@ -312,10 +289,8 @@
     -webkit-transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: left 0.125s ease-out, top 0.05s 0.125s linear,
     -webkit-transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: left 0.125s ease-out, top 0.05s 0.125s linear,
-    transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: left 0.125s ease-out, top 0.05s 0.125s linear,
-    transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1),
+  transition: left 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: left 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1),
     -webkit-transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
