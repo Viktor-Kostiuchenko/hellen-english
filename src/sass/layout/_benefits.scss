@@ -1,9 +1,11 @@
 .benefits {
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin-top: -1px;
   background-image: linear-gradient(to bottom, $primary-black-color 64%, $primary-white-color 64%);
 }
 .benefits-container {
-  padding-bottom: 39px;
+  // padding-bottom: 39px;
   position: relative;
 }
 .benefits-title {
@@ -87,6 +89,8 @@
 }
 @media screen and (min-width: 1366px) {
   .benefits {
+    padding-top: 82px; // was not
+    padding-bottom: 65px; // was not
     background-image: linear-gradient(
       to bottom,
       $primary-black-color 38%,
@@ -139,12 +143,10 @@
   }
 }
 
-
 .benefits-list .benefits-item {
   transform: translateX(220%);
   opacity: 0;
-  transition: transform 1000ms ease 0ms,
-  opacity 1000ms ease 0ms;
+  transition: transform 1000ms ease 0ms, opacity 1000ms ease 0ms;
 }
 
 .benefits-list._active .benefits-item {
@@ -153,31 +155,25 @@
 }
 
 .benefits-list._active .benefits-item:nth-child(1) {
-  transition: transform 1000ms ease 0ms,
-  opacity 1000ms ease 0ms;
+  transition: transform 1000ms ease 0ms, opacity 1000ms ease 0ms;
 }
 
 .benefits-list._active .benefits-item:nth-child(2) {
-  transition: transform 1000ms ease 200ms,
-  opacity 1000ms ease 200ms;
+  transition: transform 1000ms ease 200ms, opacity 1000ms ease 200ms;
 }
 
 .benefits-list._active .benefits-item:nth-child(3) {
-  transition: transform 1000ms ease 400ms,
-  opacity 1000ms ease 400ms;
+  transition: transform 1000ms ease 400ms, opacity 1000ms ease 400ms;
 }
 
 .benefits-list._active .benefits-item:nth-child(4) {
-  transition: transform 1000ms ease 600ms,
-  opacity 1000ms ease 600ms;
+  transition: transform 1000ms ease 600ms, opacity 1000ms ease 600ms;
 }
 
 .benefits-list._active .benefits-item:nth-child(5) {
-  transition: transform 1000ms ease 800ms,
-  opacity 1000ms ease 800ms;
+  transition: transform 1000ms ease 800ms, opacity 1000ms ease 800ms;
 }
 
 .benefits-list._active .benefits-item:nth-child(6) {
-  transition: transform 1000ms ease 1000ms,
-  opacity 1000ms ease 1000ms;
+  transition: transform 1000ms ease 1000ms, opacity 1000ms ease 1000ms;
 }

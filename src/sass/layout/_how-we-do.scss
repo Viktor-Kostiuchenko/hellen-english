@@ -1,5 +1,5 @@
 .how-we-do {
-  padding-top: 50px;
+  padding-top: 25px; // was 50
   padding-bottom: 50px;
 }
 
@@ -14,9 +14,7 @@
 
   transform: translate(-100%, 0px);
   opacity: 0;
-  transition: transform 1000ms ease 0ms,
-  opacity 1000ms ease 0ms;
-  
+  transition: transform 1000ms ease 0ms, opacity 1000ms ease 0ms;
 }
 
 .how-we-do-list._active {
@@ -129,7 +127,7 @@
 
 @media screen and (min-width: 1366px) {
   .how-we-do {
-    padding-top: 130px;
+    padding-top: 65px; //was 130
     padding-bottom: 130px;
   }
 

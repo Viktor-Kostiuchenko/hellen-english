@@ -1,26 +1,23 @@
 .hero {
-   padding: 22px 0 47px;
-   background-repeat: no-repeat;
-   background-position: left -64px bottom -25px;
-   background-size: cover;
+  padding: 20px 0 47px; // was 22 47
+  background-repeat: no-repeat;
+  background-position: left -64px bottom -25px;
+  background-size: cover;
 
    background-image: url(../images/content/tablet/hero-bg-tab.png);
 
-   @media (min-device-pixel-ratio: 2),
-   (min-resolution: 192dpi),
-   (min-resolution: 2dppx) {
-   background-image: url(../images/content/tablet/hero-bg-tab@2x.png);
- }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/content/tablet/hero-bg-tab@2x.png);
+  }
 
    @media screen and (min-width: 768px) {
-     padding: 44px 0 64px;
-     background-position: center bottom;
-
+      padding: 42px 0 64px;
+      background-position: center bottom;
    }
 
    @media screen and (min-width: 1366px) {
-     padding: 11px 0 10px;
-     background-image: url(../images/content/desktop/hero-bg-desk.png);
+      padding: 23px 0 10px; // was top 11
+      background-image: url(../images/content/desktop/hero-bg-desk.png);
 
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
          background-image: url(../images/content/desktop/hero-bg-desc@2x.png);

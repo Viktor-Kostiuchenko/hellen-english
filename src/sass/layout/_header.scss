@@ -1,9 +1,22 @@
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 42px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    padding-top: 40px;
+    padding-bottom: 23px;
+  }
+}
+
 .header-container {
   justify-content: space-between;
   display: flex;
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 .header-nav-list,
 .header-order-button {
