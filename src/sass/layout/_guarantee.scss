@@ -69,3 +69,16 @@
     }
   }
 }
+
+.guar-list {
+  transform: scale(2);
+  opacity: 0;
+  transition: transform 1000ms ease 0ms,
+  opacity 1000ms ease 100ms;
+}
+
+.guar-list._active{
+  transform: scale(1);
+  opacity: 1;
+}
+
