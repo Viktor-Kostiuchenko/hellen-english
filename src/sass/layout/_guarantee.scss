@@ -1,5 +1,6 @@
 .guar {
-  padding-top: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .guar-list {
@@ -47,6 +48,11 @@
   }
 }
 @media screen and (min-width: 1366px) {
+  .guar {
+    padding-top: 65px; // was not
+    padding-bottom: 65px; // was not
+  }
+
   .guar-list {
     padding: 50px 112px 45px 112px;
   }
@@ -73,12 +79,10 @@
 .guar-list {
   transform: scale(2);
   opacity: 0;
-  transition: transform 1000ms ease 0ms,
-  opacity 1000ms ease 100ms;
+  transition: transform 1000ms ease 0ms, opacity 1000ms ease 100ms;
 }
 
-.guar-list._active{
+.guar-list._active {
   transform: scale(1);
   opacity: 1;
 }
-

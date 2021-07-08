@@ -1,5 +1,6 @@
 .about {
-  padding-top: 40px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .about-list {
@@ -94,9 +95,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .about {
-    padding-top: 50px;
-  }
   .about-title {
     margin-bottom: 30px;
   }
@@ -135,6 +133,11 @@
   }
 }
 @media screen and (min-width: 1366px) {
+  .about {
+    padding-top: 65px; // was not
+    padding-bottom: 65px; // was not
+  }
+
   .about-title {
     margin-bottom: 50px;
   }
@@ -186,10 +189,8 @@
 .about-tumb {
   transform: scale(0);
   transition: transform 1000ms ease 0ms;
-
 }
 
 .about-tumb._active {
   transform: scale(1);
 }
-

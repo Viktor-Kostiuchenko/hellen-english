@@ -1,6 +1,7 @@
 .problems {
+  padding-top: 25px; // was 50
+  padding-bottom: 25px; // was 50
   background-image: linear-gradient(to bottom, $primary-black-color 75%, $primary-white-color 75%);
-  padding-top: 25px;
 }
 
 .problems-title {
@@ -21,17 +22,13 @@
 
   transform: translate(100%, 0px);
   opacity: 0;
-  transition: transform 1000ms ease 0ms,
-  opacity 1000ms ease 0ms;
-
+  transition: transform 1000ms ease 0ms, opacity 1000ms ease 0ms;
 }
 
 .problems-list-block._active {
   transform: translate(0px, 0px);
   opacity: 1;
 }
-
-
 
 .problems-list {
   counter-reset: section;
@@ -91,11 +88,12 @@
 @media screen and (min-width: 1366px) {
   .problems {
     padding-top: 100px;
+    padding-bottom: 65px; // was 130
 
     background-image: url('../images/icons/campfire.svg'),
       linear-gradient(to bottom, $primary-black-color 80%, $primary-white-color 80%);
     background-repeat: no-repeat, no-repeat;
-    background-position: right -46px top 94px, 0px 0px;
+    background-position: right -46px top 146px, 0px 0px; // top was 94
     // background-position: 1273px 94px, 0px 0px;
   }
 
