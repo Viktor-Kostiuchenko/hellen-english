@@ -17,6 +17,7 @@
   width: 30px;
   height: 30px;
 }
+
 //-------------tablet------------------------
 @media screen and (min-width: 768px) {
   .header-order-button {
@@ -31,6 +32,7 @@
     background-color: $primary-white-color;
     color: $accent-color;
     transition: $modal-time $modal-form;
+
     &:focus,
     &:hover {
       color: #fff;
@@ -41,6 +43,13 @@
   .header-mobile-button {
     margin-left: 40px;
   }
+  .wrapper-heder-btn {
+    position: relative;
+    width: 260px;
+    height: 48px;
+    border: 2px solid $accent-color;
+    box-sizing: border-box;
+  }
 }
 //--------------desktop---------------------
 @media screen and (min-width: 1366px) {
@@ -48,8 +57,8 @@
     display: none;
   }
   .header-order-button {
-    min-width: 336px;
-    min-height: 70px;
+    min-width: 332px;
+    min-height: 66px;
   }
   .header-nav-list {
     display: flex;
@@ -81,6 +90,10 @@
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       color: $accent-color;
     }
+  }
+  .wrapper-heder-btn {
+    width: 336px;
+    height: 70px;
   }
 }
 //-----------mobile menu----------------
