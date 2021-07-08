@@ -20,8 +20,10 @@
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
   transform: translate(100%, 0px);
-  transition: transform 1000ms ease 0ms;
   opacity: 0;
+  transition: transform 1000ms ease 0ms,
+  opacity 1000ms ease 0ms;
+
 }
 
 .problems-list-block._active {

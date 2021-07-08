@@ -131,13 +131,19 @@
    }
 }
 
+.hero-button-wrapper {
+   opacity: 0;
+   transition: opacity 1000ms ease 500ms;
+}
+
+.hero-button-wrapper._active {
+   opacity: 1;
+}
+
 .hero-button {
    display: flex;
    align-items: center;
    justify-content: center;
-
-   opacity: 0;
-   transition: opacity 1000ms ease 0ms;
 }
 
 .hero-button:hover {
@@ -146,20 +152,16 @@
    }
 }
 
-.hero-button._active {
-   opacity: 1;
-}
-
-.hero-background {
+.hero-image {
    transform: scale(0);
    transition: transform 1000ms ease 0ms;
 }
 
-.hero-wrapper._active .hero-background {
+.hero-image-thumb._active .hero-image {
    transform: scale(1);
 }
 
-.hero-background {
+.hero-image {
    @media screen and (max-width: 767px) {
       width: 208px;
       margin: 0 auto;
