@@ -186,11 +186,10 @@
   }
 }
 
-.about-tumb {
-  transform: scale(0);
-  transition: transform 1000ms ease 0ms;
+.about._active .about-picture {
+  animation-name: backInLeft;
+  animation-duration: 1000ms;
+  animation-timing-function: ease;
 }
 
-.about-tumb._active {
-  transform: scale(1);
-}
+@keyframes backInLeft{0%{-webkit-transform:translateX(-2000px) scale(.7);transform:translateX(-2000px) scale(.7);opacity:.7}80%{-webkit-transform:translateX(0) scale(.7);transform:translateX(0) scale(.7);opacity:.7}to{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
