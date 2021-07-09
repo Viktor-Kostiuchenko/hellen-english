@@ -79,7 +79,8 @@ if (animItems.length >0) {
     openBackdropModalBtn: document.querySelector('[data-modal-open-2]'),
     modalMobile: document.querySelector('[data-menu]'),
      modal: document.querySelector('[data-modal]'),
-    mod: document.getElementsByTagName('body')[0],
+     mod: document.getElementsByTagName('body')[0],
+    mod2: document.getElementsByTagName('html')[0],
     burger: document.querySelector('[burger]'),
     logo: document.querySelector('[mobile-logo]'),
   };
@@ -95,6 +96,7 @@ if (animItems.length >0) {
   function toggleModalMobile() {
     refs.modalMobile.classList.toggle('is-open');
     refs.mod.classList.toggle('no-scrol');
+    refs.mod2.classList.toggle('no-scrol');
     refs.burger.classList.toggle('burger-active');
     refs.logo.classList.toggle('mobile-menu-logo');
   }
@@ -107,6 +109,7 @@ if (animItems.length >0) {
      function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
    refs.mod.classList.toggle('no-scrol');
+   refs.mod2.classList.toggle('no-scrol');
   }
 
 
