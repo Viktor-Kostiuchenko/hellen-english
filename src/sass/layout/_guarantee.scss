@@ -76,13 +76,10 @@
   }
 }
 
-.guar-list {
-  transform: scale(2);
-  opacity: 0;
-  transition: transform 1000ms ease 0ms, opacity 1000ms ease 100ms;
+.guar-list._active .guar-item::before {
+  animation-name: flash;
+  animation-duration: 1000ms;
+  animation-timing-function: ease;
 }
 
-.guar-list._active {
-  transform: scale(1);
-  opacity: 1;
-}
+@keyframes flash{0%,50%,to{opacity:1}25%,75%{opacity:0}}

@@ -306,3 +306,46 @@
     letter-spacing: 0.08em;
   }
 }
+
+.program-item .program-study-block-item {
+  transform: translateX(220%);
+  opacity: 0;
+  transition: transform 1000ms ease 0ms, opacity 1000ms ease 0ms;
+}
+
+.program-item._active .program-study-block-item{
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+.program-item._active .program-study-block-item:nth-child(1){
+  transition: transform 1000ms ease 0ms, opacity 1000ms ease 0ms;
+}
+
+.program-item._active .program-study-block-item:nth-child(2){
+  transition: transform 1000ms ease 200ms, opacity 1000ms ease 200ms;
+}
+
+.program-item._active .program-study-block-item:nth-child(3){
+  transition: transform 1000ms ease 400ms, opacity 1000ms ease 400ms;
+}
+
+.program-item._active .program-study-block-item:nth-child(4){
+  transition: transform 1000ms ease 600ms, opacity 1000ms ease 600ms;
+}
+
+.program-item._active .program-study-block-item:nth-child(5){
+  transition: transform 1000ms ease 800ms, opacity 1000ms ease 800ms;
+}
+
+
+.program-item .program-item-title {
+  transform: translateX(220%);
+  opacity: 0;
+  transition: transform 1000ms ease 0ms, opacity 1000ms ease 0ms;
+}
+
+.program-item._active .program-item-title {
+  transform: translateX(0px);
+  opacity: 1; 
+}
