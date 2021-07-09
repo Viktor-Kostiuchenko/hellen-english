@@ -1,5 +1,5 @@
 .hero {
-  padding: 20px 0 47px; // was 22 47
+  padding: 20px 0 47px;
   background-repeat: no-repeat;
   background-position: left -64px bottom -25px;
   background-size: cover;
@@ -27,10 +27,7 @@
 
 .hero-container {
    @media screen and (min-width: 768px) {
-      position: relative;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
 
       padding-bottom: 137px;
    }
@@ -46,32 +43,39 @@
    margin-right: auto;
 
    @media screen and (max-width: 767px) {
-      width: 280px;
       margin-bottom: 30px;
    }
 
    @media screen and (min-width: 768px) {
+       margin-left: 0;
+   }
+}
+
+.hero-text-block {
+   margin-bottom: 52px;
+
+   transform: translate(0px, 120%);
+   opacity: 0;
+   transition: all 1000ms ease 0ms;
+
+   @media screen and (max-width: 767px) {
+      width: 280px;
+   }
+
+   @media screen and (min-width: 768px) {
       width: 332px;
-      margin-left: 0;
    }
 
    @media screen and (min-width: 1366px) {
       width: 520px;
    }
-
-   .hero-text-block {
-      margin-bottom: 52px;
-
-      transform: translate(0px, 120%);
-      opacity: 0;
-      transition: all 1000ms ease 0ms;
-   }
-
-   .hero-text-block._active {
-      transform: translate(0px, 0px);
-      opacity: 1;
-   }
 }
+
+.hero-text-block._active {
+   transform: translate(0px, 0px);
+   opacity: 1;
+}
+
 
 .hero-title {
    margin-bottom: 8px;
@@ -112,6 +116,10 @@
    font-size: 14px;
    line-height: 1.57;
 
+   @media screen and (max-width: 1365px) {
+      width: 270px;;
+   }
+
    @media screen and (min-width: 1366px) {
       font-size: 20px;
       line-height: 1.64;
@@ -119,7 +127,9 @@
 }
 
 .hero-guarantee-accent {
-   color: $accent-color;
+   @media screen and (max-width: 1365px) {
+      color: $accent-color;
+   }
 }
 
 .hero-content .btn-wrapper {
@@ -158,6 +168,14 @@
    transform: scale(1);
 }
 
+.hero-image-thumb {
+   width: 100%;
+   @media screen and (min-width: 768px) {
+      position: relative;
+   }
+
+}
+
 .hero-image {
    @media screen and (max-width: 767px) {
       width: 208px;
@@ -167,11 +185,14 @@
    @media screen and (min-width: 768px) {
       position: absolute;
       top: 0;
-      right: 0;
+      right: -22px;
       width: 376px;
    }
 
    @media screen and (min-width: 1366px) {
+      top: -55px;
+      right: -25px;
       width: 842px;
+      
    }
 }
