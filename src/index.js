@@ -125,3 +125,19 @@ for (let anchor of anchors) {
 
 })();
 
+
+// scroll-button
+document.getElementById("buttonUp").onclick = function scrollUpFunction() {
+   document.body.scrollTop = 0;
+   document.documentElement.scrollTop = 0;
+}
+
+window.onscroll = function() {scrollFunction()}
+function scrollFunction() {
+   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      document.getElementById("buttonUp").style.display ='block';
+   }
+   else {
+         document.getElementById("buttonUp").style.display = "none"
+      }
+   }
