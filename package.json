@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Viktor-Kostiuchenko.github.io/team-project",
+  "homepage": "https://Viktor-Kostiuchenko.github.io/hellen-english",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-project/"
+    "build": "parcel build src/*.html --public-url /hellen-english/"
   },
   "repository": {
     "type": "git",
